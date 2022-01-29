@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="VerdeApp.css" >
+    <title>SmogTech</title>
+</head>
+<body style="display: block; margin: auto; width: 50em;">
+    <div class="container">
+        <div id="TITLE" class="row p-3 mb-2 bg-success text-white text-center" style="font-size: 1.6em;">
+        <h4>SmogTech </h4><p>Environmental Data Collection</p>
+        </div>
+        <div id="Notes" class="row">
+            <div class="col bg-primary p-2 text-dark bg-opacity-50 text-center" 
+                style="width: 87px;margin: 0px 18px 18px 2px; height: 16em;cursor: pointer;">    
+                MY NOTES
+                <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" style="width: 20px;">
+            </div>
+
+            <div id="Gallery" class="col bg-warning p-2 text-dark bg-opacity-25 text-center"
+            style="width: 87px;margin: 0px 0px 18px 2px; height: 16em; cursor: pointer;">
+                MY DATA (WILL POP UP TO A GALLERY PAGE)
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <!--CALENDAR-->
+            <div id="Calendar" class="col bg-secondary p-2 bg-opacity-25 text-center"
+            style="width: 87px; margin: 0px 18px 18px 2px; height: 18em;">
+                <div id="month">January</div>
+                <div id="container2"></div>
+                <div class="buttons">
+                    <button type="button" id='previous'>
+                        Previous</button>
+                    <button type="button" id='next'>Next</button>
+                </div>
+            </div>
+
+
+            <!--FORM-->
+            <div id="Form" class="col bg-success p-2 text-dark bg-opacity-50 text-center"
+            style="width: 87px;margin: 0px 0px 18px 2px; height: 18em; cursor: pointer;">
+            FORM (WILL POP UP A FORM PAGE )
+            </div>
+
+
+        </div>
+        <!--OPEN SOURCE-->
+        <div class="card text-center">
+            <div id="openSource" class="card-body">
+                <h5 class="card-title">Open Source By Nazareth Villa</h5>
+                <a href="https://github.com/nazavilla"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" style="width: 40px;"></a>
+            </div>
+            <div id="date" class=" text-muted">
+                January, 2022
+            </div>
+        </div>
+    </div>
+    <script src="VerdeApp.js"></script>
+</body>
+</html>
