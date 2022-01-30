@@ -43,10 +43,85 @@
 
 
             <!--FORM-->
-            <div id="Form" class="col bg-success p-2 text-dark bg-opacity-50 text-center"
+            <div id="Form" onclick="myFunction()" class="col bg-success p-2 text-dark bg-opacity-50 text-center popup"
             style="width: 87px;margin: 0px 0px 18px 2px; height: 18em; cursor: pointer;">
-            FORM (WILL POP UP A FORM PAGE )
+            <spam class="popuptext" id="myPopup">FORM</spam>
             </div>
+
+            <!--///////////////////////////// POP UP ////////////////////////////////////////////////-->
+            <div class="card bg-success p-2 text-dark bg-opacity-25">
+                <!--CITY NAME INPUT-->
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control-lg" placeholder="City Name" autocomplete="off">
+                </div>
+            
+                <!--inhabitants-->
+                <div class="input-group mb-3">
+                    <input class="form-control-lg" type="text" placeholder="Number of inhabitants"></input>
+                </div>
+                <!--Air Quality Index-->
+            
+                <div class="col-md mb-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                            <option selected>Air Quality Index</option>
+                            <option class="dropdown-item">0-50 (Good)</option>
+                            <option class="dropdown-item">51-100 (moderate)</option>
+                            <option class="dropdown-item">101-150 (harmful for vulnerable groups)</option>
+                            <option class="dropdown-item">151-200 (harmful for the rest of the population)</option>
+                            <option class="dropdown-item">201-300 (very unhealthy)</option>
+                            <option class="dropdown-item">over 300 (Hazardous)</option>
+                        </select>
+                        <label for="floatingSelectGrid">Works with selects</label>
+                    </div>
+                </div>
+            
+                <!--Most Common Pollutants-->
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">pollutants</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Select</option>
+                        <option value="1">Particular matter</option>
+                        <option value="2">Tropospheric ozone (O3)</option>
+                        <option value="3">Nitrogen Dioxide (NO2)</option>
+                        <option value="3">sulfur dioxide (SO2)</option>
+            
+                    </select>
+                </div>
+            
+                <!--Noise Pollution levels -->
+            
+                <div class="col-md mb-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                            <option selected>Noise Pollution levels</option>
+                            <option class="dropdown-item">0-50db (low)</option>
+                            <option class="dropdown-item">51-75db (considerate noise)</option>
+                            <option class="dropdown-item">75-100db (high noise)</option>
+                            <option class="dropdown-item">101-120db (harmful noise) </option>
+                            <option class="dropdown-item">121db (irreversible damage)</option>
+                        </select>
+                        <label for="floatingSelectGrid">Works with selects</label>
+                    </div>
+                </div>
+            
+                <!--Presence of garbage
+                    is checked by default
+                    -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Presence of garbage
+                    </label>
+                </div>
+
+
+
+
+
+
+
+
 
 
         </div>
@@ -61,6 +136,7 @@
             </div>
         </div>
     </div>
+
     <script src="VerdeApp.js"></script>
 </body>
 </html>

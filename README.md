@@ -17,12 +17,13 @@ Home page has sections such as calendar, notes, Gallery and a template form to o
         - 151-200 (harmful for the rest of the population)
         - 201-300 (very unhealthy)
         - over 300 (Hazardous)
+
     - most commont air pollutants:
         - Particular matter
         - Tropospheric ozone (O3)
         - Nitrogen Dioxide (NO2)
         - sulfur dioxide (SO2)
-        -
+
 
 
     - noise polution levels:
@@ -31,5 +32,6 @@ Home page has sections such as calendar, notes, Gallery and a template form to o
         - 75-100db (high noise)
         - 101-120db (harmful noise)
         - 121db (irreversible damage)
+
+
     - presence of garbage
-    -

@@ -70,10 +70,11 @@ populateCalendar(currentMonthNumber);
 
 
 /////////////////////////////////////////////
-//FORM pop Up
-function popUp(){
 
-    alert("POPUP");
+//FORM pop Up
+function myFunction(){
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle('show');
 
 }
 
