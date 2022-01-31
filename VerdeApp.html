@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="VerdeApp.css" >
     <title>SmogTech</title>
 </head>
-<body style="display: block; margin: auto; width: 50em;">
+
+<body>
     <div class="container">
-        <div id="TITLE" class="row p-3 mb-2 bg-success text-white text-center" style="font-size: 1.6em;">
+        <div id="showcase">
+        <div id="TITLE" class="row p-3 mb-3 text-white text-center" style=" font-size: 1.6em; background-image: url(/IMG-20210317-WA0018.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom; font-weight: bold;">
         <h4>SmogTech </h4><p>Environmental Data Collection</p>
         </div>
         <div id="Notes" class="row">
-            <div class="col bg-primary p-2 text-dark bg-opacity-50 text-center" 
-                style="width: 87px;margin: 0px 18px 18px 2px; height: 16em;cursor: pointer;">    
+            <div class="col p-2 text-dark bg-opacity-50 text-center" 
+                style="background-color: #4b643bd6; width: 87px;margin: 0px 18px 18px 2px; height: 11em;cursor: pointer;">    
                 MY NOTES
                 <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" style="width: 20px;">
             </div>
 
-            <div id="Gallery" class="col bg-warning p-2 text-dark bg-opacity-25 text-center"
-            style="width: 87px;margin: 0px 0px 18px 2px; height: 16em; cursor: pointer;">
+            <div id="Gallery" class="col p-2 text-dark bg-opacity-25 text-center"
+            style="background-color: #9b6942e6; width: 87px;margin: 0px 0px 18px 2px; height: 11em; cursor: pointer;">
                 MY DATA (WILL POP UP TO A GALLERY PAGE)
             </div>
         </div>
@@ -31,7 +33,7 @@
 
             <!--CALENDAR-->
             <div id="Calendar" class="col bg-secondary p-2 bg-opacity-25 text-center"
-            style="width: 87px; margin: 0px 18px 18px 2px; height: 18em;">
+            style="width: 87px; margin: 0px 18px 18px 2px; height: 19em;">
                 <div id="month">January</div>
                 <div id="container2"></div>
                 <div class="buttons">
@@ -43,15 +45,17 @@
 
 
             <!--FORM-->
-            <div id="Form" onclick="myFunction()" class="col bg-success p-2 text-dark bg-opacity-50 text-center popup"
-            style="width: 87px;margin: 0px 0px 18px 2px; height: 18em; cursor: pointer;">
-            <spam class="popuptext" id="myPopup">FORM</spam>
+            <div id="Form" onclick="myFunction()" class="col p-2 text-dark bg-opacity-50 text-center popup"
+            style="background-color: #416128; width: 87px;margin: 0px 0px 18px 2px; height: 19em; cursor: pointer;">
+            Form
             </div>
+        </div>
+
 
             <!--///////////////////////////// POP UP ////////////////////////////////////////////////-->
-            <div class="card bg-success p-2 text-dark bg-opacity-25">
+            <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain" style="width: 45em; left: 12em;">
                 <!--CITY NAME INPUT-->
-                <div class="input-group mb-3 ">
+                <div class="input-group mb-2 ">
                     <input type="text" class="form-control-lg" placeholder="City Name" autocomplete="off">
                 </div>
             
@@ -115,7 +119,11 @@
                     </label>
                 </div>
 
+                <!--ADD A SAVE BUTTON-->
 
+                <!--SEARCH HOW TO CONNECT TO A DATABASE-->
+                
+                <!--SHOW DATA BASE AS LISTS OF CITIES-->
 
 
 

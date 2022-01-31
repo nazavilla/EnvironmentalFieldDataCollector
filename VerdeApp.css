@@ -4,11 +4,12 @@
 
 #container2 {
   display: grid;
-  grid-template-columns: repeat(7, 3.1em);
-  grid-auto-rows: 2em;
-  grid-gap: 4px;
-  margin-top: 10px;
+  grid-template-columns: repeat(7, 4em);
+  grid-auto-rows: 1.4em;
+  grid-gap: 5px;
+  padding: 1.8em;
 }
+
 .date {
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
   font-family: serif;
   align-items: center;
   justify-content: center;
-  font-size: 1.6em;
+  font-size: 1.2em;
   border: 0.1px solid black;
 }
 
@@ -25,7 +26,7 @@
   margin: 20px;
   flex-direction: row;
   justify-content: space-between;
-  width: 22em;
+  width: 30em;
 }
 button {
   background-color: Transparent;
@@ -47,4 +48,39 @@ button:hover {
   border: none;
   font-size: 1.3em;
   font-weight: bold;
+}
+
+#showcase {
+  position: relative;
+}
+
+/*show when form is clicked*/
+.popUp_superMain {
+  display: none;
+}
+
+#showcase.minus:after {
+  display: block;
+}
+
+/*ADD THIS SECTION WHEN THE USER CLICK ON FORM*/
+
+#showcase:after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 87em;
+  margin-left: -10em;
+}
+
+.popUp_superMain {
+  bottom: 35em;
+  position: relative;
+  z-index: 2;
 }

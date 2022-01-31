@@ -73,11 +73,16 @@ populateCalendar(currentMonthNumber);
 
 //FORM pop Up
 function myFunction(){
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle('show');
+    var popUp_superMain = document.querySelector("#popUp_superMain");
 
+  if (popUp_superMain.style.display === "none") {
+    popUp_superMain.style.display = "block";
+    document.getElementById('#showcase').className += "minus";
+  } else {
+    popUp_superMain.style.display = "none";
+  }
 }
 
 
 let form1 = document.querySelector("#Form");
-form1.addEventListener("click", popUp);
+form1.addEventListener("click", myFunction);
