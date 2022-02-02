@@ -1,3 +1,12 @@
+#TITLE {
+  font-size: 1.6em;
+  background-image: url("header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-weight: bold;
+}
+
 #month {
   font: 1.6em serif;
 }
@@ -54,15 +63,6 @@ button:hover {
   position: relative;
 }
 
-/*show when form is clicked*/
-.popUp_superMain {
-  display: none;
-}
-
-#showcase.minus:after {
-  display: block;
-}
-
 /*ADD THIS SECTION WHEN THE USER CLICK ON FORM*/
 
 #showcase:after {
@@ -79,8 +79,23 @@ button:hover {
   margin-left: -10em;
 }
 
-.popUp_superMain {
-  bottom: 35em;
-  position: relative;
+#popUp_superMain {
+  display: none;
+  bottom: 12em;
+  position: absolute;
   z-index: 2;
+  margin-left: 8em;
+}
+
+#popUPBackground {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 42em;
+  backdrop-filter: blur(12px);
+  z-index: 1;
+  position: relative;
+  width: 87em;
+  margin-left: -10em;
+  height: 42em;
+  margin-bottom: -52em;
 }
