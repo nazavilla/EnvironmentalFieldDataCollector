@@ -3,10 +3,8 @@
     //USER MUST BE ABLE TO UPLOAD PHOTO,
     // ADD COMMENTS SELECT OR CHECK BOX ETC
 
-//FIND AN API TO ADD GOOGLE MAPS OR ANY MAP
-
-/////////////////////////////////////////////
-//Calendar
+///////////////////////////////////////////
+//CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR
 
 const calendarElement = document.querySelector('#container2');
 const monthElement = document.querySelector('#month');
@@ -70,7 +68,7 @@ populateCalendar(currentMonthNumber);
 
 
 /////////////////////////////////////////////
-
+//FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM 
 //FORM pop Up
 function myFunction(){
     var popUp_superMain = document.querySelector("#popUp_superMain");

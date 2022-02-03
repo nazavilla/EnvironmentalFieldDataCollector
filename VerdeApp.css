@@ -81,10 +81,13 @@ button:hover {
 
 #popUp_superMain {
   display: none;
-  bottom: 12em;
+  bottom: 5em;
   position: absolute;
   z-index: 2;
   margin-left: 8em;
+  height: 30em;
+  width: 40em;
+  left: 12em;
 }
 
 #popUPBackground {
