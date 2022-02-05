@@ -1,10 +1,31 @@
+body {
+  background-color: #f5f9ff;
+  margin: 0 auto;
+  width: 50em;
+  font-family: "Playfair Display";
+  line-height: 1.25;
+  transition: font-size 0.25s ease;
+}
+
 #TITLE {
   font-size: 1.6em;
   background-image: url("images/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 10em;
   background-position: bottom;
   font-weight: bold;
+}
+
+#TITLE h4 {
+  border: 2px solid white;
+  width: 18em;
+  margin: 0 auto;
+  font-size: 2em;
+}
+
+#Subtitle {
+  font-size: 0.8em;
 }
 
 #month {
@@ -101,4 +122,57 @@ button:hover {
   margin-left: -10em;
   height: 42em;
   margin-bottom: -52em;
+}
+
+.notas {
+  background-color: white;
+  margin: 0px 18px 18px 2px;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 3px gray;
+  border-radius: 2%;
+}
+#Calendar {
+  box-shadow: 0.5px 0.5px 3px gray;
+  background-color: white;
+  width: 87px;
+  margin: 0px 18px 18px 2px;
+  height: 19em;
+}
+
+#Gallery {
+  box-shadow: 0.5px 0.5px 3px gray;
+  background-color: white;
+  width: 87px;
+  margin: 0px 0px 18px 2px;
+  height: 11em;
+  cursor: pointer;
+}
+
+#Form {
+  box-shadow: 0.5px 0.5px 3px gray;
+  background-color: white;
+  width: 87px;
+  margin: 0px 0px 18px 2px;
+  height: 19em;
+  cursor: pointer;
+  color: #bd6152;
+}
+
+.card {
+  background-color: #bfbfbf;
+  color: white;
+}
+
+.card-body h5 {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
 }
