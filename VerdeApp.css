@@ -82,8 +82,6 @@ button:hover {
   position: relative;
 }
 
-/*ADD THIS SECTION WHEN THE USER CLICK ON FORM*/
-
 #showcase:after {
   display: none;
   content: "";
@@ -101,12 +99,12 @@ button:hover {
 #popUp_superMain {
   background-color: white;
   display: none;
-  bottom: 5em;
+  bottom: 7em;
   position: absolute;
   z-index: 2;
   margin-left: 8em;
-  height: 30em;
-  width: 40em;
+  height: 33em;
+  width: 30em;
   left: 17em;
 }
 
@@ -121,6 +119,18 @@ button:hover {
   margin-left: -21em;
   height: 43em;
   margin-bottom: -51em;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 42em;
+  }
+  #popUp_superMain {
+    left: 14em;
+  }
+  #popUPBackground {
+    width: 60em;
+  }
 }
 
 .notas {
@@ -165,4 +175,10 @@ button:hover {
 
 #formTitle {
   font: 1.4em serif;
+}
+
+.form-control-lg {
+  margin: 0 auto;
+  width: 18em;
+  text-align: center;
 }

@@ -1,9 +1,6 @@
-//CREATE A SIDE BAR
 
-    //USER MUST BE ABLE TO UPLOAD PHOTO,
-    // ADD COMMENTS SELECT OR CHECK BOX ETC
+    //USER MUST BE ABLE TO UPLOAD PHOTO
 
-///////////////////////////////////////////
 //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR //CALENDAR
 
 const calendarElement = document.querySelector('#container2');

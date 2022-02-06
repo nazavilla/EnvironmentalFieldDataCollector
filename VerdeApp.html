@@ -13,16 +13,16 @@
 <body>
     <div class="container">
         <div id="showcase lol">
-        <div id="TITLE" class="row p-3 mb-3 text-white text-center" >
+        <div id="TITLE" class="row p-4 mb-4 text-white text-center" >
             <h4> SmogTech <br> <span id="Subtitle"> Environmental Data Collection </span></h4>
         </div>
         <div id="Notes" class="row">
-            <div class="notas col p-2 text-dark bg-opacity-50 text-center" >    
+            <div class="notas col p-2 text-dark text-center" >    
                 <div id="myNotesTitle">NOTES</div>
                 <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" style="width: 20px;">
             </div>
 
-            <div id="Gallery" class="col p-2 text-dark bg-opacity-25 text-center">
+            <div id="Gallery" class="col p-2 text-dark text-center">
                 <div id="mydatatitle">Gallery</div>
             </div>
         </div>
@@ -30,7 +30,7 @@
         <div class="row">
 
             <!--CALENDAR-->
-            <div id="Calendar" class="col p-2 bg-opacity-25 text-center">
+            <div id="Calendar" class="col p-2 text-center">
                 <div id="month">January</div>
                 <div id="container2"></div>
                 <div class="buttons">
@@ -44,15 +44,15 @@
 
 
             <!--FORM-->
-            <div onclick="myFunction()" id="Form" onclick="myFunction()" class="col p-2 bg-opacity-50 text-center popup">
+        <div onclick="myFunction()" id="Form" onclick="myFunction()" class="col p-2 text-center ">
             <div id="formTitle">Form</div>
             </div>
         </div>
 
 
             <!--///////////////////////////// POP UP ////////////////////////////////////////////////-->
-            <div id="popUPBackground">
-            <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
+        <div id="popUPBackground">
+        <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                 <!--CITY NAME INPUT-->
                 <div class="input-group mb-2 ">
                     <input type="text" class="form-control-lg" placeholder="City Name" autocomplete="off">
@@ -117,7 +117,13 @@
                         Presence of garbage
                     </label>
                 </div>
+                <!--Comments-->
+                <div class="input-group">
+                    <span class="input-group-text">Comments</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
 
+                <!--Save Butttons-->
                 <button onclick="save()" type="button" id="save" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
 
 
@@ -130,13 +136,13 @@
                             table, thead, tbody, tfooter, tr, td, th, span or scopes to define columns and rows and style it with css, etc
                 -->
 
-                <!--    3        MODIFY SIZES WHEN WEB PAGE SIZE IS SMALLER-->
+                <!--    3        MODIFY SIZES WHEN WEB PAGE SIZE IS SMALLER NOTE: with bootstraps it already has it-->
 
 
 
 
         </div>
-        </div>
+    </div>
         
         <div class="card text-center">
             <div id="openSource" class="card-body">
@@ -148,7 +154,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <script src="VerdeApp.js"></script>
 </body>
 </html>
