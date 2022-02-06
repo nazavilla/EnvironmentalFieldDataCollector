@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="VerdeApp.css" >
     <title>SmogTech</title>
 </head>
@@ -14,43 +18,48 @@
     <div class="container">
         <div id="showcase lol">
         <div id="TITLE" class="row p-4 mb-4 text-white text-center" >
-            <h4> SmogTech <br> <span id="Subtitle"> Environmental Data Collection </span></h4>
+            <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
         </div>
         <div id="Notes" class="row">
-            <div class="notas col p-2 text-dark text-center" >    
+            <div class="notas col p-2 text-center" >    
                 <div id="myNotesTitle">NOTES</div>
                 <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" style="width: 20px;">
             </div>
-
-            <div id="Gallery" class="col p-2 text-dark text-center">
-                <div id="mydatatitle">Gallery</div>
+                    <!--FORM-->
+            <div onclick="myFunction()" id="Form" onclick="myFunction()" class="col p-2 text-center ">
+                <div id="formTitle">Form</div>
             </div>
+
         </div>
         
         <div class="row">
+            <div id="recentCitiesAdded" class="col p-2 text-center">
+                <div id="listtitle">Cities Added List</div>
+            </div>
+        </div> 
+        <div class="row">
+            <div id="Gallery" class="col p-2 text-center">
+                <div id="mydatatitle">Gallery</div>
+            </div>
 
-            <!--CALENDAR-->
-            <div id="Calendar" class="col p-2 text-center">
-                <div id="month">January</div>
-                <div id="container2"></div>
-                <div class="buttons">
-                    <button type="button" id='previous'>
-                        Previous</button>
-                    <button type="button" id='next'>Next</button>
+
+        </div>
+            <!--EROOR/SUCCESS POP UP -->
+
+               <div onclick="done()" id="successCard" class="row successCard">
+                    <img src='https://cdn-icons-png.flaticon.com/512/190/190411.png'>
+                    <h1>Your request was submitted successfully</h1>
+                    <button class="bttnsuccess">Done</button>
+                </div>
+                
+                <div onclick="tryAgaing()" id="tryagaing" class="row errorCard">
+                    <img src='https://cdn-icons-png.flaticon.com/512/1810/1810747.png'>
+                    <h1>Oops! Something went wrong, try again </h1>
+                    <button class="bttnerror">Try again</button>
                 </div>
 
-                <!--MODIFY THE CALENDAR SINCE IT SHOWS WRONG WEEKDAY-->
-            </div>
 
-
-            <!--FORM-->
-        <div onclick="myFunction()" id="Form" onclick="myFunction()" class="col p-2 text-center ">
-            <div id="formTitle">Form</div>
-            </div>
-        </div>
-
-
-            <!--///////////////////////////// POP UP ////////////////////////////////////////////////-->
+            <!-- FORM POP UP -->
         <div id="popUPBackground">
         <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                 <!--CITY NAME INPUT-->
@@ -123,8 +132,11 @@
                     <textarea class="form-control" aria-label="With textarea"></textarea>
                 </div>
 
-                <!--Save Butttons-->
+            <!--Save Butttons-->
                 <button onclick="save()" type="button" id="save" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
+
+        </div>
+                
 
 
                 <!--    1       SEARCH HOW TO CONNECT TO A DATABASE-->
@@ -135,25 +147,24 @@
                         table tags:
                             table, thead, tbody, tfooter, tr, td, th, span or scopes to define columns and rows and style it with css, etc
                 -->
-
+                <!--
+                    Add a search bar to look up onto de cities already saved
+                -->
                 <!--    3        MODIFY SIZES WHEN WEB PAGE SIZE IS SMALLER NOTE: with bootstraps it already has it-->
 
 
-
-
-        </div>
-    </div>
+            </div>
         
-        <div class="card text-center">
-            <div id="openSource" class="card-body">
-                <h5 class="card-title">Open Source By Nazareth Villa</h5>
-                <a href="https://github.com/nazavilla"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" style="width: 40px;"></a>
-            </div>
-            <div id="date" class=" text-muted">
-                January, 2022
+            <div class="card text-center">
+                <div id="openSource" class="card-body">
+                    <h5 class="card-title">Open Source By Nazareth Villa</h5>
+                    <a href="https://github.com/nazavilla"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" style="width: 40px;"></a>
+                </div>
+                <div id="currentdate">
+                    January, 2022
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <script src="VerdeApp.js"></script>
 </body>
