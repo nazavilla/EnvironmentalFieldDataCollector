@@ -68,8 +68,7 @@ populateCalendar(currentMonthNumber);
 
 
 /////////////////////////////////////////////
-//FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM //FORM 
-//FORM pop Up
+//FORM 
 function myFunction(){
     var popUp_superMain = document.querySelector("#popUp_superMain");
     var popUp_superMain2 = document.querySelector("#popUPBackground");
@@ -86,3 +85,24 @@ function myFunction(){
   }
 }
 
+
+
+
+///Save Button NOT CONNECTED TO A DATABASE
+
+function save(){
+        var popUp_superMain = document.querySelector("#popUp_superMain");
+    var popUp_superMain2 = document.querySelector("#popUPBackground");
+
+
+  if (popUp_superMain.style.display === "block") {
+
+    popUp_superMain2.style.display = "none";
+    popUp_superMain.style.display = "none";
+
+    
+  } else {
+    popUp_superMain.style.display = "block";
+  }
+
+}

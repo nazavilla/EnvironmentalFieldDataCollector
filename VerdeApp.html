@@ -14,16 +14,16 @@
     <div class="container">
         <div id="showcase lol">
         <div id="TITLE" class="row p-3 mb-3 text-white text-center" >
-        <h4> SmogTech <br> <span id="Subtitle"> Environmental Data Collection </span></h4>
+            <h4> SmogTech <br> <span id="Subtitle"> Environmental Data Collection </span></h4>
         </div>
         <div id="Notes" class="row">
             <div class="notas col p-2 text-dark bg-opacity-50 text-center" >    
-                <strong> NOTES</strong>
+                <div id="myNotesTitle">NOTES</div>
                 <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" style="width: 20px;">
             </div>
 
             <div id="Gallery" class="col p-2 text-dark bg-opacity-25 text-center">
-                <strong>MY DATA</strong> (WILL POP UP TO A GALLERY PAGE)
+                <div id="mydatatitle">Gallery</div>
             </div>
         </div>
         
@@ -45,7 +45,7 @@
 
             <!--FORM-->
             <div onclick="myFunction()" id="Form" onclick="myFunction()" class="col p-2 bg-opacity-50 text-center popup">
-            <strong>Form</strong>
+            <div id="formTitle">Form</div>
             </div>
         </div>
 
@@ -118,7 +118,7 @@
                     </label>
                 </div>
 
-                <button type="button" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
+                <button onclick="save()" type="button" id="save" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
 
 
                 <!--    1       SEARCH HOW TO CONNECT TO A DATABASE-->
@@ -136,9 +136,8 @@
 
 
         </div>
-
         </div>
-        <!--OPEN SOURCE-->
+        
         <div class="card text-center">
             <div id="openSource" class="card-body">
                 <h5 class="card-title">Open Source By Nazareth Villa</h5>
@@ -152,7 +151,4 @@
 
     <script src="VerdeApp.js"></script>
 </body>
-<footer>
-    © 2022.
-</footer>
 </html>

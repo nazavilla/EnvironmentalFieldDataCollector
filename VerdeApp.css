@@ -29,15 +29,14 @@ body {
 }
 
 #month {
-  font: 1.6em serif;
+  font: 1.4em serif;
 }
 
 #container2 {
   display: grid;
-  grid-template-columns: repeat(7, 4em);
-  grid-auto-rows: 1.4em;
-  grid-gap: 5px;
-  padding: 1.8em;
+  grid-template-columns: repeat(6, 3.7em);
+  grid-auto-rows: 1em;
+  grid-gap: 1px;
 }
 
 .date {
@@ -48,15 +47,14 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.2em;
-  border: 0.1px solid black;
+  border: 0.1px solid rgb(201, 189, 189);
 }
 
 .buttons {
   display: flex;
-  margin: 20px;
   flex-direction: row;
   justify-content: space-between;
-  width: 30em;
+  width: 22em;
 }
 button {
   background-color: Transparent;
@@ -66,17 +64,17 @@ button {
   overflow: hidden;
   outline: none;
   font-family: serif;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 button:hover {
   border: 1px solid;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .date:hover {
   border: none;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -101,6 +99,7 @@ button:hover {
 }
 
 #popUp_superMain {
+  background-color: white;
   display: none;
   bottom: 5em;
   position: absolute;
@@ -108,7 +107,7 @@ button:hover {
   margin-left: 8em;
   height: 30em;
   width: 40em;
-  left: 12em;
+  left: 17em;
 }
 
 #popUPBackground {
@@ -119,9 +118,9 @@ button:hover {
   z-index: 1;
   position: relative;
   width: 87em;
-  margin-left: -10em;
-  height: 42em;
-  margin-bottom: -52em;
+  margin-left: -21em;
+  height: 43em;
+  margin-bottom: -51em;
 }
 
 .notas {
@@ -131,12 +130,16 @@ button:hover {
   box-shadow: 0.5px 0.5px 3px gray;
   border-radius: 2%;
 }
+
+#myNotesTitle {
+  font: 1.4em serif;
+}
 #Calendar {
   box-shadow: 0.5px 0.5px 3px gray;
   background-color: white;
   width: 87px;
   margin: 0px 18px 18px 2px;
-  height: 19em;
+  height: 10em;
 }
 
 #Gallery {
@@ -147,32 +150,19 @@ button:hover {
   height: 11em;
   cursor: pointer;
 }
+#mydatatitle {
+  font: 1.4em serif;
+}
 
 #Form {
   box-shadow: 0.5px 0.5px 3px gray;
   background-color: white;
   width: 87px;
   margin: 0px 0px 18px 2px;
-  height: 19em;
+  height: 10em;
   cursor: pointer;
-  color: #bd6152;
 }
 
-.card {
-  background-color: #bfbfbf;
-  color: white;
-}
-
-.card-body h5 {
-  color: white;
-  font-size: 2em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
-}
-
-footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 30px;
-  text-align: center;
+#formTitle {
+  font: 1.4em serif;
 }
