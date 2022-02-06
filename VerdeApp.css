@@ -1,7 +1,7 @@
 body {
   background-color: #f5f9ff;
   margin: 0 auto;
-  width: 50em;
+  width: 55em;
   font-family: "Playfair Display";
   line-height: 1.25;
   transition: font-size 0.25s ease;
@@ -15,7 +15,6 @@ body {
   background-size: cover;
   height: 10em;
   background-position: bottom;
-  border-radius: 1em;
 }
 
 #TITLE h4 {
@@ -88,22 +87,54 @@ body {
   cursor: pointer;
   box-shadow: 0.5px 0.5px 3px gray;
   border-radius: 2%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 #myNotesTitle {
   font: 1.4em serif;
 }
+
 #recentCitiesAdded {
   box-shadow: 0.5px 0.5px 3px gray;
   background-color: white;
   width: 87px;
   margin: 0px 0px 18px 2px;
-  height: 11em;
+  height: 25em;
   display: block;
 }
 
 #listtitle {
-  font: 1.4em serif;
+  font: 1.9em serif;
+}
+
+table {
+  height: 50%;
+  left: 10%;
+  margin: 10px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 90%;
+}
+
+thead th {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+tr {
+  background: #b4c0b5;
+  border-bottom: 1px solid white;
+}
+
+th,
+td {
+  font-weight: 400;
+  padding: 8px;
+  width: 33.3333%;
+  font-size: 18px;
+  border: 1px solid white;
 }
 
 #Gallery {
@@ -138,11 +169,6 @@ body {
   text-align: center;
 }
 
-.card {
-  background-color: #2e402c;
-  color: white;
-}
-
 #currentdate {
   font-weight: bolder;
   color: white;
@@ -167,7 +193,8 @@ body {
 }
 
 .errorCard {
-  display: block;
+  /*ADD SECTION WHEN USER DOES NOT CLICK ON SAVE BUTTON IT SHOW ERRORCARD*/
+  display: none;
   position: absolute;
   z-index: 1;
   top: 15em;
