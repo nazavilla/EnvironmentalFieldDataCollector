@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/740/740934.png" type = "image/x-icon">
+    <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/04/72/66/96/1000_F_472669611_P8LsU4O1dC19VV4il3XLRB7RdKWdYzpi.jpg" type = "image/x-icon">
     <link rel="stylesheet" href="VerdeApp.css" >
     <title>data collector</title>
 </head>
@@ -25,23 +25,51 @@
                 <div id="myNotesTitle">NOTES</div>
                 <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" style="width: 20px;">
             </div>
-                    <!--FORM-->
-            <div onclick="myFunction()" id="Form" onclick="myFunction()" class="col p-2 text-center ">
-                <div id="formTitle">Form</div>
+            <div id="Gallery" class="col p-2 text-center">
+                <h4 id="mydatatitle" style="text-align: center;">Gallery</h4>
+                <!--<div class="imgFlex"  style="display: flex; justify-content: space-around;">
+                    <div class="contenedor">
+                        <input type="file" id="image_input" accept="image/png, image/jpg">
+                        <div id="display_image"></div>
+                    </div>
+                    <div class="columna">
+                        <img src="Image1 (1).jpg" alt="Nature" style="width: 15em;">
+                    </div>
+                    <div class="columna">
+                        <img src="Image1 (3).jpg" alt="Mountains" style="width: 15em;">
+                    </div>
+                </div>-->
             </div>
 
         </div>
+                    <!--EROOR/SUCCESS POP UP -->
+
+               <div onclick="done()" id="successCard" class="row successCard">
+                    <img src='https://cdn-icons-png.flaticon.com/512/190/190411.png'>
+                    <h1>Your request was successfully submitted </h1>
+                    <button class="bttnsuccess">Done</button>
+                </div>
+                <!--ADD SECTION WHEN USER DOES NOT CLICK ON SAVE BUTTON IT SHOW ERRORCARD-->
+                <div onclick="tryAgaing()" id="tryagaing" class="row errorCard">
+                    <img src='https://cdn-icons-png.flaticon.com/512/1810/1810747.png'>
+                    <h1>Oops! Something went wrong, try again </h1>
+                    <button class="bttnerror">Try again</button>
+                </div>
+
         
         <div class="row">
-            <div id="recentCitiesAdded" class="col p-2 text-center">
-                <div id="listtitle">Cities Added List</div>
+            <div id="recentCitiesAdded" class="col p-2">
+                <div class="cityTopSection">
+                    <h1 id="listtitle">Cities Added List</h1>
+                    <div><button onclick="myFunction()" id="Form" class="cityFormBttn"> City Form</button></div>
+                </div>
                 <div id="main">
                 <table>
                     <thead>
                         <tr>
                             <th>City</th>
-                            <th>Air Quality Index</th>
-                            <th>Noise Level</th>
+                            <th>AQI</th>
+                            <th>Noise</th>
                             <th>Pollutant</th>
                             <th>Comment</th>
                             <th>Garbage</th>
@@ -118,30 +146,13 @@
             </div>
         </div> 
         <div class="row">
-            <div id="Gallery" class="col p-2 text-center">
-                <div id="mydatatitle">Gallery</div>
-            </div>
+
 
 
         </div>
-            <!--EROOR/SUCCESS POP UP -->
-
-               <div onclick="done()" id="successCard" class="row successCard">
-                    <img src='https://cdn-icons-png.flaticon.com/512/190/190411.png'>
-                    <h1>Your request was successfully submitted </h1>
-                    <button class="bttnsuccess">Done</button>
-                </div>
-                <!--ADD SECTION WHEN USER DOES NOT CLICK ON SAVE BUTTON IT SHOW ERRORCARD-->
-                <div onclick="tryAgaing()" id="tryagaing" class="row errorCard">
-                    <img src='https://cdn-icons-png.flaticon.com/512/1810/1810747.png'>
-                    <h1>Oops! Something went wrong, try again </h1>
-                    <button class="bttnerror">Try again</button>
-                </div>
-
-
             <!-- FORM POP UP -->
-        <div id="popUPBackground">
-        <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
+            <div id="popUPBackground">
+            <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                 <!--CITY NAME INPUT-->
                 <div class="input-group mb-2 ">
                     <input type="text" class="form-control-lg" placeholder="City Name" autocomplete="off">

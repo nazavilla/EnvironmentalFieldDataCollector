@@ -43,9 +43,11 @@ function save(){
     citiesListHide.style.display = "block";
     success.style.display = "block";
     
-  } else {
+  }  else {
     popUp_superMain.style.display = "block";
   }
+
+  //ADD if pop up values are empty show error popup
 
 }
 
@@ -53,6 +55,7 @@ function save(){
 function done(){
        var success = document.querySelector("#successCard");
            success.style.display = "none";
+        
 
 }
 
@@ -66,3 +69,18 @@ function tryAgaing(){
 
 
 
+///image saver GALLERY
+
+  const imagenInput = document.querySelector("#image_input");
+  
+  imagenInput.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () =>{
+       const uploaded_image = reader.result;
+       document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
+
+  });
+
+  reader.readAsDataURL(this.files[0]);
+
+});
