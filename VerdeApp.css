@@ -59,13 +59,13 @@ body {
 #popUPBackground {
   display: none;
   background: rgba(0, 0, 0, 0.6);
-  bottom: 30em;
+  bottom: 29em;
   backdrop-filter: blur(12px);
   z-index: 1;
   position: relative;
-  width: 87em;
+  width: 89.9em;
   margin-left: -21em;
-  height: 42em;
+  height: 41em;
   margin-bottom: -60em;
 }
 
@@ -124,7 +124,7 @@ thead th {
 }
 
 tr {
-  background: #b4c0b5;
+  background: #76855470;
   border-bottom: 1px solid white;
 }
 
@@ -135,6 +135,12 @@ td {
   width: 33.3333%;
   font-size: 18px;
   border: 1px solid white;
+}
+
+#main {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 300px;
 }
 
 #Gallery {
