@@ -2,7 +2,7 @@
 
 A data Collection created to store environmental characteristics of specifics zones. This prototype allows user monitor main information in communities. Home page has sections such as calendar, notes, Gallery and a template form to organize notes via pop ups. The motivation to create this project comes from a personal environmental sustainability pastime.
 
-##### Build with
+### Built with
 
 - Bootstrap
 
