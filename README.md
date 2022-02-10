@@ -1,4 +1,4 @@
-# SmogTech
+# Environmental Field Data Collection
 
 Data Collection to store environmental characteristics of specifics zones. This prototype allows user monitor main information in communities.
 
