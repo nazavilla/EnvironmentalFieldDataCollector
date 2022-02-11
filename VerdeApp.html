@@ -27,18 +27,6 @@
             </div>
             <div id="Gallery" class="col p-2 text-center">
                 <h4 id="mydatatitle" style="text-align: center;">Gallery</h4>
-                <!--<div class="imgFlex"  style="display: flex; justify-content: space-around;">
-                    <div class="contenedor">
-                        <input type="file" id="image_input" accept="image/png, image/jpg">
-                        <div id="display_image"></div>
-                    </div>
-                    <div class="columna">
-                        <img src="Image1 (1).jpg" alt="Nature" style="width: 15em;">
-                    </div>
-                    <div class="columna">
-                        <img src="Image1 (3).jpg" alt="Mountains" style="width: 15em;">
-                    </div>
-                </div>-->
             </div>
 
         </div>
@@ -64,8 +52,8 @@
                     <div><button onclick="myFunction()" id="Form" class="cityFormBttn"> City Form</button></div>
                 </div>
                 <div id="main">
-                <table>
-                    <thead>
+                <table id="tables">
+                    <thead id="thead">
                         <tr>
                             <th>City</th>
                             <th>AQI</th>
@@ -75,72 +63,6 @@
                             <th>Garbage</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td  id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td  id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td  id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td  id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="tblDelChkList"><input type="checkbox"></td>
-                        </tr>
-                    </tbody>
                 </table>
                 </div>
             </div>
@@ -154,14 +76,15 @@
             <div id="popUPBackground">
             <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                 <!--CITY NAME INPUT-->
-                <div class="input-group mb-2 ">
-                    <input type="text" class="form-control-lg" placeholder="City Name" autocomplete="off">
+                <div id="citynameinhabitants" class="row input-group mb-3 ">
+                    <input type="text" class="form-control-lg mb-2" placeholder="City Name" autocomplete="off">
+                    <input class="form-control-lg mb-2" type="text" placeholder="Number of inhabitants"></input>
                 </div>
             
-                <!--inhabitants-->
+                <!--inhabitants
                 <div class="input-group mb-3">
-                    <input class="form-control-lg" type="text" placeholder="Number of inhabitants"></input>
-                </div>
+                    
+                </div>-->
                 <!--Air Quality Index-->
             
                 <div class="col-md mb-4">

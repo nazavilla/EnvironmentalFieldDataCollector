@@ -1,6 +1,44 @@
 
     //USER MUST BE ABLE TO UPLOAD PHOTO
 
+//create tables
+  var body = document.querySelector("#main");
+  var tbl = document.querySelector("#tables");
+    // create elements <tbody>
+  var tblBody = document.createElement("tbody");
+
+
+  // cells creation
+  for (var j = 0; j <= 10; j++) {
+    // table row creation
+    var row = document.createElement("tr");
+
+    for (var i = 0; i < 6; i++) {
+
+        
+      // create element <td> and text node 
+      //Make text node the contents of <td> element
+      // put <td> at end of the table row
+      var cell = document.createElement("td");
+      var cellText = document.createTextNode("");
+
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+
+    }
+
+    //row added to end of table body
+    tblBody.appendChild(row);
+  }
+
+  // append the <tbody> inside the <table>
+  tbl.appendChild(tblBody);
+  // put <table> in the <body>
+  body.appendChild(tbl);
+
+//Added a class to the tblBody
+  tblBody.classList.add("tablebody");
+
 
 
 /////////////////////////////////////////////
@@ -65,22 +103,3 @@ function tryAgaing(){
         tryagain.style.display = "none";
 
 }
-
-
-
-
-///image saver GALLERY
-
-  const imagenInput = document.querySelector("#image_input");
-  
-  imagenInput.addEventListener("change", function() {
-  const reader = new FileReader();
-  reader.addEventListener("load", () =>{
-       const uploaded_image = reader.result;
-       document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
-
-  });
-
-  reader.readAsDataURL(this.files[0]);
-
-});

@@ -47,26 +47,24 @@ body {
 #popUp_superMain {
   background-color: white;
   display: none;
-  top: 4em;
+  top: 3em;
   position: absolute;
   z-index: 2;
   margin-left: 8em;
-  height: 35em;
+  height: 31em;
   width: 42em;
   left: 17em;
 }
 
 #popUPBackground {
   display: none;
-  background: rgba(0, 0, 0, 0.6);
   bottom: 22em;
   backdrop-filter: blur(12px);
   z-index: 1;
   position: relative;
   width: 89.9em;
   margin-left: -21em;
-  height: 50em;
-  margin-bottom: -30em;
+  height: 40em;
 }
 
 @media (max-width: 800px) {
@@ -118,6 +116,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 5em;
 }
 
 #recentCitiesAdded {
@@ -125,7 +124,7 @@ body {
   background-color: white;
   width: 87px;
   margin: 0px 0px 18px 2px;
-  height: 28em;
+  height: 35em;
   display: block;
 }
 
@@ -137,32 +136,32 @@ body {
 }
 
 table {
-  height: 50%;
-  right: 10%;
-  margin: 10px auto;
   overflow-y: scroll;
   position: static;
-  width: 90%;
+  width: 52em;
 }
 
-thead th {
+.tablebody {
+  position: relative;
+}
+
+#thead {
+  position: absolute;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 500;
-  padding: 8px;
   font-size: 1.2rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid;
+  top: 6em;
 }
-
-tr {
-  color: black;
-  border-bottom: 1px solid white;
+th {
+  width: 6em;
+  padding: 1.9em;
 }
 
 td {
-  color: darkgreen;
-  padding: 9px;
   border-bottom: 1px solid rgb(164, 164, 185);
+  height: 3em;
 }
 
 #main {
@@ -209,7 +208,7 @@ td {
 
 .form-control-lg {
   margin: 0 auto;
-  width: 18em;
+  width: 15em;
   text-align: center;
 }
 
