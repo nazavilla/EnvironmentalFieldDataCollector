@@ -48,12 +48,10 @@ body {
   background-color: white;
   display: none;
   top: 3em;
-  position: absolute;
-  z-index: 2;
-  margin-left: 8em;
   height: 31em;
-  width: 42em;
-  left: 17em;
+  width: 47em;
+  left: 22em;
+  border: 1px solid #2e402c;
 }
 
 #popUPBackground {
@@ -223,8 +221,8 @@ td {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 15em;
-  right: 30em;
+  top: 8em;
+  right: 32em;
   text-align: center;
   background-color: white;
   margin: 1em auto;
@@ -263,7 +261,7 @@ h1 {
 }
 
 .bttnsuccess {
-  background-color: #32ba7c;
+  background-color: #2e402c;
   color: white;
   border: 1px solid white;
   padding: 0.9em;
@@ -272,6 +270,11 @@ h1 {
   letter-spacing: 3px;
 }
 
+.bttnsuccess:hover {
+  background-color: white;
+  color: #2e402c;
+  border: 1px solid #2e402c;
+}
 .bttnerror {
   background-color: #cd4c4c;
   color: white;
@@ -295,6 +298,11 @@ h1 {
 .cityFormBttn:hover {
   background-color: #2e402c;
   color: #ffffff;
+}
+
+.btn {
+  background-color: #2e402c;
+  color: white;
 }
 
 .btn:active {

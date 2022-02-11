@@ -59,25 +59,20 @@
                             <th>AQI</th>
                             <th>Noise</th>
                             <th>Pollutant</th>
-                            <th>Comment</th>
                             <th>Garbage</th>
+                            <th>Comment</th>
                         </tr>
                     </thead>
                 </table>
                 </div>
             </div>
         </div> 
-        <div class="row">
-
-
-
-        </div>
-            <!-- FORM POP UP -->
-            <div id="popUPBackground">
+        <!-- FORM POP UP -->
+        <div id="popUPBackground">
             <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                 <!--CITY NAME INPUT-->
                 <div id="citynameinhabitants" class="row input-group mb-3 ">
-                    <input type="text" class="form-control-lg mb-2" placeholder="City Name" autocomplete="off">
+                    <input type="text" class="form-control-lg mb-2" placeholder="City Name">
                     <input class="form-control-lg mb-2" type="text" placeholder="Number of inhabitants"></input>
                 </div>
             
@@ -136,7 +131,7 @@
                     -->
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <label class="form-check-label mb-4" for="flexCheckChecked">
                         Presence of garbage
                     </label>
                 </div>
@@ -149,7 +144,7 @@
             <!--Save Butttons-->
                 <button onclick="save()" type="button" id="save" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
 
-        </div>
+            </div>
                 
 
 
@@ -168,8 +163,16 @@
 
 
             </div>
-    
         </div>
+
+        <!--Gallery Popup-->
+
+
+
+       
+        
+        <!--Notes Popup-->
+
     </div>
     <script src="VerdeApp.js"></script>
 </body>
