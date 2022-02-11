@@ -110,6 +110,10 @@ body {
   font: 1.4em serif;
 }
 
+.notesImg {
+  width: 2em;
+}
+
 .cityTopSection {
   display: flex;
   justify-content: space-around;
