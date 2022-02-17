@@ -9,19 +9,47 @@
   //SECTIONS TO BE ADDED
 
     //USER MUST BE ABLE TO UPLOAD PHOTO
-  
+
+
+
+//home button    
+function home(){
+  var popUpNotes = document.querySelector("#popUpNotesS");
+  var popUPNotesBackground = document.querySelector("#popUPNotesBackground");
+  var citiesListHide = document.querySelector("#recentCitiesAdded");
+
+    popUpNotes.style.display = "none";
+    popUPNotesBackground.style.display = "none";
+    citiesListHide.style.display = "block";
+
+}
+
+
+//Notes FORM
+
+function notasFunct(){
+  var popUpNotes = document.querySelector("#popUpNotesS");
+  var popUPNotesBackground = document.querySelector("#popUPNotesBackground");
+  var citiesListHide = document.querySelector("#recentCitiesAdded");
+
+    popUpNotes.style.display = "block";
+    popUPNotesBackground.style.display = "block";
+    citiesListHide.style.display = "none";
+
+}
+
+
+
 // city FORM 
 function myFunction(){
     var popUp_superMain = document.querySelector("#popUp_superMain");
     var popUp_superMain2 = document.querySelector("#popUPBackground");
-    var galleryhide = document.querySelector("#Gallery");
     var citiesListHide = document.querySelector("#recentCitiesAdded");
 
   if (popUp_superMain.style.display === "none") {
 
     popUp_superMain2.style.display = "block";
     popUp_superMain.style.display = "block";
-    galleryhide.style.display = "none";
     citiesListHide.style.display = "none";
     
   } else {
@@ -39,15 +67,17 @@ function save(){
     var citiesListHide = document.querySelector("#recentCitiesAdded");
     var success = document.querySelector("#successCard");
 
-  if (popUp_superMain.style.display === "block") {
+
+    if (popUp_superMain.style.display === "block") {
 
     popUp_superMain2.style.display = "none";
     popUp_superMain.style.display = "none";
     galleryhide.style.display = "block";
     citiesListHide.style.display = "block";
     success.style.display = "block";
-    
-  }  else {
+  }  
+  
+  else {
     popUp_superMain.style.display = "block";
   }
 
