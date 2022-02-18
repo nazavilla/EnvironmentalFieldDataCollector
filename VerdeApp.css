@@ -104,9 +104,11 @@ body {
   position: relative;
 }
 
-#recentCitiesAdded {
-  display: block;
-}
+/*
+
+ADD MEDIA QUERY TO NOTES CARD AND EACH NOTE
+
+*/
 
 .notas,
 #Gallery,
@@ -148,6 +150,7 @@ body {
 }
 
 #recentCitiesAdded {
+  display: block;
   box-shadow: 0.5px 0.5px 3px gray;
   background-color: white;
   width: 87px;
