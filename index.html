@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="flexbodies">
+    <div class="container-fluid body1">
         <div id="showcase lol">
         <div id="TITLE" class="row p-4 mb-4 text-white text-center" >
             <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
@@ -69,17 +70,19 @@
                 </div>
             </div>
         </div> 
+
+
+
         <!-- FORM POP UP -->
         <div id="popUPBackground">
             <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                 <!--CITY NAME INPUT-->
-                <div id="citynameinhabitants" class="row input-group mb-3 ">
-                    <input type="text" class="form-control-lg mb-2" placeholder="City Name">
-                    <input class="form-control-lg mb-2" type="text" placeholder="Number of inhabitants"></input>
-                </div>
+                <form id="myForm" style="display: flex;" action="/VerdeApp.js" method="post">
+                        <input id="fname" type="text" class="form-control-lg mb-2" placeholder="City Name" required>
+                        <input id="fname" class="form-control-lg mb-2" type="text" placeholder="Number of inhabitants" required>
+                </form>
 
                 <!--Air Quality Index-->
-            
                 <div class="col-md mb-4">
                     <div class="form-floating">
                         <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
@@ -141,18 +144,12 @@
 
             <!--Save Butttons-->
                 <button onclick="save()" type="button" id="save" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
-
             </div>
                 
 
 
-                <!--    1       SEARCH HOW TO CONNECT TO A DATABASE-->
-                
-                <!--    2       SHOW DATA BASE AS LISTS OF CITIES
-                
-                    The list complete it using tables in html:
-                        table tags:
-                            table, thead, tbody, tfooter, tr, td, th, span or scopes to define columns and rows and style it with css, etc
+                <!--    1       SEARCH HOW TO CONNECT TO A DATABASE
+            
                 -->
                 <!--
                     Add a search bar to look up onto de cities already saved
@@ -161,7 +158,7 @@
 
 
             </div>
-        </div>
+
 
         <!--Gallery Popup-->
         <div id="popUPNotesBackground">
@@ -202,14 +199,18 @@
                         class="btn-outline-secondary position-absolute bottom-0 mb-4">Back</button>
             </div>
         </div>
-       
-        
-        <!--Notes Popup-->
-
+                <!--Notes Popup-->
+    </div>
+    </div>
+    <div  class="body2"> 
+        <div id="map" >
+        <!-- Map API -->
+        </div>
+    </div> 
     </div>
     <script src="VerdeApp.js"></script>
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGDwVAuBSDu8YzEfWKm1WTvBYji4WE51U&callback=initMap"
+            ></script>
 </body>
-<footer>
-        <h5 class="card-title" style="text-align: center;"><a class="openSource" href="https://github.com/nazavilla/Environmental-Field-Data-Collection">Open Source</a> By Nazareth Villa</h5>
-</footer>
 </html>

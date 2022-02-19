@@ -1,11 +1,26 @@
 body {
   background-color: #f5f9ff;
-  margin: 0 auto;
-  width: 55em;
   font-family: "Playfair Display";
   line-height: 1.25;
   transition: font-size 0.25s ease;
   color: #2e402c;
+  margin-left: 18px;
+}
+
+.flexbodies {
+  display: flex;
+}
+
+.body1 {
+  width: 55em;
+  margin: 0;
+}
+
+#map {
+  height: 63.6em;
+  width: 27.3em;
+  margin: 0em 0em 0em 0.9em;
+  border: 1em solid;
 }
 
 #TITLE {
@@ -50,7 +65,7 @@ body {
   top: 3em;
   height: 31em;
   width: 47em;
-  left: 22em;
+  left: 38em;
   border: 1px solid #2e402c;
 }
 
@@ -60,9 +75,9 @@ body {
   backdrop-filter: blur(12px);
   z-index: 1;
   position: relative;
-  width: 89.9em;
+  width: 103.4em;
   margin-left: -21em;
-  height: 40em;
+  height: 70em;
 }
 
 @media (max-width: 800px) {
@@ -86,7 +101,7 @@ body {
   display: none;
   background-color: white;
   top: 10em;
-  left: 21em;
+  left: 35em;
   height: 20em;
   width: 50em;
   border: 1px solid #2e402c;
@@ -99,9 +114,10 @@ body {
   margin-left: -21em;
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
-  width: 89.9em;
-  height: 40em;
+  width: 103.4em;
+  height: 70em;
   position: relative;
+  z-index: 1;
 }
 
 /*
@@ -164,6 +180,10 @@ ADD MEDIA QUERY TO NOTES CARD AND EACH NOTE
   padding: 1em 0em 0em 0em;
   border-bottom: 1px solid;
   margin-bottom: 2em;
+}
+
+#main {
+  display: block;
 }
 
 table {
@@ -284,8 +304,8 @@ td {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 15em;
-  right: 30em;
+  top: 13em;
+  right: 33em;
   text-align: center;
   background-color: white;
   margin: 1em auto;
@@ -357,4 +377,9 @@ h1 {
 
 .note:hover {
   top: 18px;
+}
+
+#tryagaing,
+#successCard {
+  display: none;
 }
