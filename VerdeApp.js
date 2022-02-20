@@ -125,15 +125,50 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
   tblBody.classList.add("tablebody");
 
 
-  //MAP API
 
-//Boston lat and long
 
-function initMap(){
-  let options = {
-    zoom: 8,
-    center: { lat: 42.3601, lng: -71.0589}
-  }
-  //new Map
-  var map = new google.maps.Map(document.getElementById('map'), options);
-}
+
+
+
+  //Map
+  let myMap = L.map('myMap').setView([47.6062, -122.3321], 13)
+
+L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(myMap);
+
+let marker = L.marker([51.5, -0.09]).addTo(myMap);
+
+let iconMarker = L.icon({
+    iconUrl: 'marker.png',
+    iconSize: [60, 60],
+    iconAnchor: [30, 60]
+})
+
+let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap)
+
+myMap.doubleClickZoom.disable()
+myMap.on('dblclick', e => {
+  let latLng = myMap.mouseEventToLatLng(e.originalEvent);
+
+  L.marker([latLng.lat, latLng.lng], { icon: iconMarker }).addTo(myMap)
+})
+
+navigator.geolocation.getCurrentPosition(
+  (pos) => {
+    const { coords } = pos
+    const { latitude, longitude } = coords
+    L.marker([latitude, longitude], { icon: iconMarker }).addTo(myMap)
+
+    setTimeout(() => {
+      myMap.panTo(new L.LatLng(latitude, longitude))
+    }, 5000)
+  },
+  (error) => {
+    console.log(error)
+  },
+  {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  })
