@@ -16,14 +16,6 @@ body {
   margin: 0;
 }
 
-#myMap {
-  width: 28em;
-  margin: 0em 0em 0em 1em;
-  border: 1em solid;
-  position: relative;
-  z-index: -1;
-}
-
 #TITLE {
   font-size: 1.6em;
   background-image: url("header.jpg");

@@ -129,7 +129,7 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
 
 
 
-
+/*
   //Map
   let myMap = L.map('myMap').setView([47.6062, -122.3321], 8)
 
@@ -171,4 +171,25 @@ navigator.geolocation.getCurrentPosition(
     enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0
-  })
+  })*/
+
+          var map = null; //added
+
+        function maps(location) {
+
+            if (map !== undefined && map !== null) { map.remove(); }//added
+
+            map = L.map( 'mapid', { //alterated
+                center: [location[1], location[2]],
+                minZoom: 2,
+                zoom: 13
+              });
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var m = L.marker([location[1], location[2]]).addTo(map).bindPopup(location[0])
+
+        }
+        maps(['New York', 40.6971494, -74.2598757]);
