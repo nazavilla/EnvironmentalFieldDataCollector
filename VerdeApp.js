@@ -127,59 +127,15 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
 
 
 
+  //MAP
 
-
-/*
-  //Map
-  let myMap = L.map('myMap').setView([47.6062, -122.3321], 8)
-
-L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(myMap);
-
-let marker = L.marker([51.5, -0.09]).addTo(myMap);
-
-let iconMarker = L.icon({
-    iconUrl: 'marker.png',
-    iconSize: [60, 60],
-    iconAnchor: [30, 60]
-})
-
-let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap);
-
-myMap.doubleClickZoom.disable()
-myMap.on('dblclick', e => {
-  let latLng = myMap.mouseEventToLatLng(e.originalEvent);
-
-  L.marker([latLng.lat, latLng.lng], { icon: iconMarker }).addTo(myMap)
-})
-
-navigator.geolocation.getCurrentPosition(
-  (pos) => {
-    const { coords } = pos
-    const { latitude, longitude } = coords
-    L.marker([latitude, longitude], { icon: iconMarker }).addTo(myMap)
-
-    setTimeout(() => {
-      myMap.panTo(new L.LatLng(latitude, longitude))
-    }, 4000)
-  },
-  (error) => {
-    console.log(error)
-  },
-  {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
-  })*/
-
-          var map = null; //added
+          var map = null;
 
         function maps(location) {
 
-            if (map !== undefined && map !== null) { map.remove(); }//added
+            if (map !== undefined && map !== null) { map.remove(); }
 
-            map = L.map( 'mapid', { //alterated
+            map = L.map( 'mapid', {
                 center: [location[1], location[2]],
                 minZoom: 2,
                 zoom: 13
