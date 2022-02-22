@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+.body2 {
+  z-index: 0;
+}
+
 #TITLE {
   font-size: 1.6em;
   background-image: url("header.jpg");
