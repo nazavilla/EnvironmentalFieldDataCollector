@@ -131,7 +131,7 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
 
 
   //Map
-  let myMap = L.map('myMap').setView([47.6062, -122.3321], 13)
+  let myMap = L.map('myMap').setView([47.6062, -122.3321], 8)
 
 L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -145,7 +145,7 @@ let iconMarker = L.icon({
     iconAnchor: [30, 60]
 })
 
-let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap)
+let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap);
 
 myMap.doubleClickZoom.disable()
 myMap.on('dblclick', e => {
@@ -162,7 +162,7 @@ navigator.geolocation.getCurrentPosition(
 
     setTimeout(() => {
       myMap.panTo(new L.LatLng(latitude, longitude))
-    }, 5000)
+    }, 4000)
   },
   (error) => {
     console.log(error)

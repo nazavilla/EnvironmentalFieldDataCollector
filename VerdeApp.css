@@ -133,6 +133,7 @@ ADD MEDIA QUERY TO NOTES CARD AND EACH NOTE
   position: relative;
   top: 0;
   transition: top ease 0.5s;
+  border-radius: 0.2em;
 }
 
 .notas:hover,
@@ -174,6 +175,7 @@ ADD MEDIA QUERY TO NOTES CARD AND EACH NOTE
   margin: 0px 0px 18px 2px;
   height: 35em;
   display: block;
+  cursor: pointer;
 }
 
 #listtitle {
