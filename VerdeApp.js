@@ -1,16 +1,9 @@
 
-  /*JS Definitions to be added in this project:
-  
-  -scopes
-  
-  
-  */
-
-  //SECTIONS TO BE ADDED
-
-    //USER MUST BE ABLE TO UPLOAD PHOTO
-
-
+//Notes Gallery
+function gallertFunct(){
+    document.querySelector("#popUpGallery").style.display = 'block';
+    document.querySelector('#galleryPopUpBackground').style.display = "block";
+}
 
 
 //Notes FORM
@@ -22,14 +15,12 @@ function notasFunct(){
 
 //home button    
 function home(){
+  document.querySelector("#recentCitiesAdded").style.display = "block";
   document.querySelector("#popUpNotesS").style.display = "none";
   document.querySelector("#popUPNotesBackground").style.display = "none";
-  document.querySelector("#recentCitiesAdded").style.display = "block";
+  document.querySelector('#galleryPopUpBackground').style.display = "none";
+  document.querySelector("#popUpGallery").style.display = 'none';
 }
-
-
-//INSERT GALLERY FORM HERE
-
 
 
 //CITY FORM 
@@ -74,15 +65,7 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
 
 
 
-
-
-
-
 //TABLES
-
-//Whatever user enter into the city form, is gonna be added to the tables  
-//PRUEBA si puedes a#adir CLASSSes to this section
-//PRUEBA si puedes aaplicar: Creating String Using Literals (from freecodeCamp - ES6) 
 
   var bodyTable = document.querySelector("#main");
   var tbl = document.querySelector("#tables");
@@ -90,9 +73,6 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
   var tblBody = document.createElement("tbody");
 
 
-
-  //move this sectiono to inside a function when SQL is added to the project
-  //This is a GLOBAL SCOPE
   // cells creation
   for (var j = 0; j <= 10; j++) {
     // table row creation
@@ -101,11 +81,8 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
     for (var i = 0; i < 6; i++) {
 
         
-      // create element <td> and text node 
-      //Make text node the contents of <td> element
-      // put <td> at end of the table row
       var cell = document.createElement("td");
-      var cellText = document.createTextNode(""); //Add here table values after SQL is added to project
+      var cellText = document.createTextNode(""); 
 
       cell.appendChild(cellText);
       row.appendChild(cell);
@@ -125,27 +102,25 @@ const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain
   tblBody.classList.add("tablebody");
 
 
-
-
-  //MAP
-
-          var map = null;
-
-        function maps(location) {
-
-            if (map !== undefined && map !== null) { map.remove(); }
-
-            map = L.map( 'mapid', {
-                center: [location[1], location[2]],
-                minZoom: 2,
-                zoom: 13
-              });
+//Maps
+  function maps(location) {
             
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
+    var map = null;
+            
+    if (map !== undefined && map !== null) { map.remove(); }
 
-            var m = L.marker([location[1], location[2]]).addTo(map).bindPopup(location[0])
+    map = L.map( 'mapid', {
+    center: [location[1], location[2]],
+    minZoom: 2,
+     zoom: 13
+    });
+         
+     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+   }).addTo(map);
 
-        }
-        maps(['New York', 40.6971494, -74.2598757]);
+   L.marker([location[1], location[2]]).addTo(map).bindPopup(location[0])
+
+}
+
+maps(['New York', 40.6971494, -74.2598757]);

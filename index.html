@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/04/72/66/96/1000_F_472669611_P8LsU4O1dC19VV4il3XLRB7RdKWdYzpi.jpg" type = "image/x-icon">
-    <link rel="stylesheet" href="VerdeApp.css" >
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="https://as1.ftcdn.net/v2/jpg/04/72/66/96/1000_F_472669611_P8LsU4O1dC19VV4il3XLRB7RdKWdYzpi.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="VerdeApp.css">
     <title>data collector</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -19,26 +23,26 @@
 
 <body>
     <div class="flexbodies">
-    <div class="container-fluid body1">
-        <div id="showcase lol">
-        <div id="TITLE" class="row p-4 mb-4 text-white text-center" >
-            <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
-        </div>
-        <div id="Notes" class="row">
-            
-            <div onclick="notasFunct()" id="mainNotes" class="notas col p-2 text-center">    
-                <div id="myNotesTitle">NOTES</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png"  class="notesImg">
-            </div>
+        <div class="container-fluid body1">
+            <div id="showcase lol">
+                <div id="TITLE" class="row p-4 mb-4 text-white text-center">
+                    <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
+                </div>
+                <div id="Notes" class="row">
 
-            <div id="Gallery" class="col p-2 text-center">
-                <h4 id="mydatatitle" style="text-align: center;">Gallery</h4>
-            </div>
+                    <div onclick="notasFunct()" id="mainNotes" class="notas col p-2 text-center">
+                        <div id="myNotesTitle">NOTES</div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" class="notesImg">
+                    </div>
 
-        </div>
-                    <!--EROOR/SUCCESS POP UP -->
+                    <div onclick="gallertFunct()" id="Gallery" class="col p-2 text-center">
+                        <h4 id="mydatatitle" style="text-align: center;">Gallery</h4>
+                    </div>
 
-               <div onclick="done()" id="successCard" class="row successCard">
+                </div>
+                <!--EROOR/SUCCESS POP UP -->
+
+                <div onclick="done()" id="successCard" class="row successCard">
                     <img src='https://cdn-icons-png.flaticon.com/512/190/190411.png'>
                     <h1>Your request was successfully submitted </h1>
                     <button class="bttnsuccess">Done</button>
@@ -50,105 +54,110 @@
                     <button class="bttnerror">Try again</button>
                 </div>
 
-        
-        <div class="row">
-            <div id="recentCitiesAdded" class="col p-2">
-                <div class="cityTopSection">
-                    <h1 id="listtitle">Cities Added List</h1>
-                    <div><button onclick="myFunction()" id="Form" class="cityFormBttn"> City Form</button></div>
-                </div>
-                <div id="main">
-                <table id="tables">
-                    <thead id="thead">
-                        <tr>
-                            <th>City</th>
-                            <th>AQI</th>
-                            <th>Noise</th>
-                            <th>Pollutant</th>
-                            <th>Garbage</th>
-                            <th>Comment</th>
-                        </tr>
-                    </thead>
-                </table>
-                </div>
-            </div>
-        </div> 
 
-
-
-        <!-- FORM POP UP -->
-        <div id="popUPBackground">
-            <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
-                <!--CITY NAME INPUT-->
-                <form id="myForm" style="display: flex;" action="/VerdeApp.js" method="post">
-                        <input id="fname" type="text" class="form-control-lg mb-2" placeholder="City Name" required>
-                        <input id="fname" class="form-control-lg mb-2" type="text" placeholder="Number of inhabitants" required>
-                </form>
-
-                <!--Air Quality Index-->
-                <div class="col-md mb-4">
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                            <option selected>Air Quality Index</option>
-                            <option class="dropdown-item">0-50 (Good)</option>
-                            <option class="dropdown-item">51-100 (moderate)</option>
-                            <option class="dropdown-item">101-150 (harmful for vulnerable groups)</option>
-                            <option class="dropdown-item">151-200 (harmful for the rest of the population)</option>
-                            <option class="dropdown-item">201-300 (very unhealthy)</option>
-                            <option class="dropdown-item">over 300 (Hazardous)</option>
-                        </select>
-                        <label for="floatingSelectGrid">Works with selects</label>
+                <div class="row">
+                    <div id="recentCitiesAdded" class="col p-2">
+                        <div class="cityTopSection">
+                            <h1 id="listtitle">Cities Added List</h1>
+                            <div><button onclick="myFunction()" id="Form" class="cityFormBttn"> City Form</button></div>
+                        </div>
+                        <div id="main">
+                            <table id="tables">
+                                <thead id="thead">
+                                    <tr>
+                                        <th>City</th>
+                                        <th>AQI</th>
+                                        <th>Noise</th>
+                                        <th>Pollutant</th>
+                                        <th>Garbage</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            
-                <!--Most Common Pollutants-->
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">pollutants</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Select</option>
-                        <option value="1">Particular matter</option>
-                        <option value="2">Tropospheric ozone (O3)</option>
-                        <option value="3">Nitrogen Dioxide (NO2)</option>
-                        <option value="3">sulfur dioxide (SO2)</option>
-            
-                    </select>
-                </div>
-            
-                <!--Noise Pollution levels -->
-            
-                <div class="col-md mb-4">
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                            <option selected>Noise Pollution levels</option>
-                            <option class="dropdown-item">0-50db (low)</option>
-                            <option class="dropdown-item">51-75db (considerate noise)</option>
-                            <option class="dropdown-item">75-100db (high noise)</option>
-                            <option class="dropdown-item">101-120db (harmful noise) </option>
-                            <option class="dropdown-item">121db (irreversible damage)</option>
-                        </select>
-                        <label for="floatingSelectGrid">Works with selects</label>
-                    </div>
-                </div>
-            
-                <!--Presence of garbage
+
+
+
+                <!-- FORM POP UP -->
+                <div id="popUPBackground">
+                    <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
+                        <!--CITY NAME INPUT-->
+                        <form id="myForm" style="display: flex;" action="/VerdeApp.js" method="post">
+                            <input id="fname" type="text" class="form-control-lg mb-2" placeholder="City Name" required>
+                            <input id="fname" class="form-control-lg mb-2" type="text"
+                                placeholder="Number of inhabitants" required>
+                        </form>
+
+                        <!--Air Quality Index-->
+                        <div class="col-md mb-4">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelectGrid"
+                                    aria-label="Floating label select example">
+                                    <option selected>Air Quality Index</option>
+                                    <option class="dropdown-item">0-50 (Good)</option>
+                                    <option class="dropdown-item">51-100 (moderate)</option>
+                                    <option class="dropdown-item">101-150 (harmful for vulnerable groups)</option>
+                                    <option class="dropdown-item">151-200 (harmful for the rest of the population)
+                                    </option>
+                                    <option class="dropdown-item">201-300 (very unhealthy)</option>
+                                    <option class="dropdown-item">over 300 (Hazardous)</option>
+                                </select>
+                                <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                        </div>
+
+                        <!--Most Common Pollutants-->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">pollutants</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Select</option>
+                                <option value="1">Particular matter</option>
+                                <option value="2">Tropospheric ozone (O3)</option>
+                                <option value="3">Nitrogen Dioxide (NO2)</option>
+                                <option value="3">sulfur dioxide (SO2)</option>
+
+                            </select>
+                        </div>
+
+                        <!--Noise Pollution levels -->
+
+                        <div class="col-md mb-4">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelectGrid"
+                                    aria-label="Floating label select example">
+                                    <option selected>Noise Pollution levels</option>
+                                    <option class="dropdown-item">0-50db (low)</option>
+                                    <option class="dropdown-item">51-75db (considerate noise)</option>
+                                    <option class="dropdown-item">75-100db (high noise)</option>
+                                    <option class="dropdown-item">101-120db (harmful noise) </option>
+                                    <option class="dropdown-item">121db (irreversible damage)</option>
+                                </select>
+                                <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                        </div>
+
+                        <!--Presence of garbage
                     is checked by default
                     -->
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label mb-4" for="flexCheckChecked">
-                        Presence of garbage
-                    </label>
-                </div>
-                <!--Comments-->
-                <div class="input-group">
-                    <span class="input-group-text">Comments</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label mb-4" for="flexCheckChecked">
+                                Presence of garbage
+                            </label>
+                        </div>
+                        <!--Comments-->
+                        <div class="input-group">
+                            <span class="input-group-text">Comments</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
 
-            <!--Save Butttons-->
-                <button onclick="save()" type="button" id="save" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
-            </div>
-        </div>
+                        <!--Save Butttons-->
+                        <button onclick="save()" type="button" id="save"
+                            class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
+                    </div>
+                </div>
                 <!--TODO NOTES:
                      1        connect to a database
                      2        Separate in modules
@@ -156,59 +165,71 @@
                      4        check media queries correct sizes.
                      5        Open pull request github
                 -->
-        <!--Gallery Popup-->
-        <div id="popUPNotesBackground">
-            <div id="popUpNotesS" class="card p-2 text-dark bg-opacity-25">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 note">
-                            <div class="card-body">
-                                <h5 class="card-title">Note 1</h5>
+                <!--Notes Popup-->
+                <div id="popUPNotesBackground">
+                    <div id="popUpNotesS" class="card p-2 text-dark bg-opacity-25">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 note">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Note 1</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                            <div class="col">
+                                <div class="card h-100 note">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Note 2</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 note">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Note 3</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 note">
-                            <div class="card-body">
-                                <h5 class="card-title">Note 2</h5>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 note">
-                            <div class="card-body">
-                                <h5 class="card-title">Note 3</h5>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
+                        <button type="button" id="notesDone" onclick="home()"
+                            class="btn-outline-secondary position-absolute bottom-0 mb-4">Back</button>
                     </div>
                 </div>
-                <button type="button" id="notesDone" onclick="home()"
-                        class="btn-outline-secondary position-absolute bottom-0 mb-4">Back</button>
+                <!--Gallery Popup-->
+                <div id="galleryPopUpBackground">
+                    <div id="popUpGallery" class="card p-2 text-dark bg-opacity-25">
+                        <div class="showCitiesDiv" >
+                            <img class='picsS' src='galeria/NYC.jpg' alt="New York City" />
+                            <img class='picsS' src='galeria/PuertoAysen.jpg' alt="Puerto Aysen" />
+                            <img class='picsS' src='galeria/SantaCruz.jpg' alt="Santa Cruz" />
+                        </div>
+                        <button type="button" id="notesDone" onclick="home()"
+                            class="btn-outline-secondary position-absolute bottom-0 mb-4">Back</button>
+                    </div>
+                </div>
             </div>
         </div>
-                <!--Notes Popup-->
-    </div>
-    </div>
-    <div  class="body2"> 
-            <div id="mapid" style="width: 24em; height: 37em; margin: 10px; border: 0.8em solid #2e402c;"></div>
-    </div> 
-    </div>
 
+        <div class="body2">
+            <div id="mapid" style="width: 24em; height: 37em; margin: 10px; border: 0.8em solid #2e402c;"></div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-    <script src="map.js"></script>
+        
     <script src="VerdeApp.js"></script>
 
 </body>
+
 </html>
