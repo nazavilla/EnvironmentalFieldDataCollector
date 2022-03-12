@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap"
         rel="stylesheet">
     <link rel="icon"
         href="https://as1.ftcdn.net/v2/jpg/04/72/66/96/1000_F_472669611_P8LsU4O1dC19VV4il3XLRB7RdKWdYzpi.jpg"
         type="image/x-icon">
     <link rel="stylesheet" href="VerdeApp.css">
-    <title>data collector</title>
+    <title>Data collector</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
+    
 </head>
 
 <body>
     <div class="flexbodies">
-        <div class="container-fluid body1">
+        <div class="body1">
             <div id="showcase lol">
                 <div id="TITLE" class="row p-4 mb-4 text-white text-center">
                     <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
@@ -63,7 +60,7 @@
                         </div>
                         <div id="main">
                             <table id="tables">
-                                <thead id="thead">
+                                <thead id="thead" class="thead">
                                     <tr>
                                         <th>City</th>
                                         <th>AQI</th>
@@ -220,7 +217,7 @@
         </div>
 
         <div class="body2">
-            <div id="mapid" style="width: 24em; height: 37em; margin: 10px; border: 0.8em solid #2e402c;"></div>
+            <div id="mapid" class="mapid"></div>
         </div>
     </div>
 
@@ -233,3 +230,9 @@
 </body>
 
 </html>
+
+<!--
+
+
+    Tailwind CSS Mobility First
+-->
