@@ -1,6 +1,6 @@
 # Environmental Field Data Collection
 
-A data Collection created to store environmental characteristics of specifics zones. This prototype allows user monitor main information in communities. Home page has sections such as notes, Gallery and a template form to organize cities data via pop ups. The motivation to create this project comes from a personal environmental sustainability pastime.
+A data Collection created to store environmental characteristics of specifics zones. This prototype allows user monitor main information in communities. Home page has sections such as a template form to organize cities, a form to allow user input field data, and a graphic map. The motivation to create this project comes from a personal environmental sustainability pastime.
 
 ### Built with
 
