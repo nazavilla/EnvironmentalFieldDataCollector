@@ -1,25 +1,8 @@
 
-//Notes Gallery
-function gallertFunct(){
-    document.querySelector("#popUpGallery").style.display = 'block';
-    document.querySelector('#galleryPopUpBackground').style.display = "block";
-}
-
-
-//Notes FORM
-function notasFunct(){
-  document.querySelector("#popUpNotesS").style.display = "block";
-  document.querySelector("#popUPNotesBackground").style.display = "block";
-  document.querySelector("#recentCitiesAdded").style.display = "none";
-}
 
 //home button    
 function home(){
   document.querySelector("#recentCitiesAdded").style.display = "block";
-  document.querySelector("#popUpNotesS").style.display = "none";
-  document.querySelector("#popUPNotesBackground").style.display = "none";
-  document.querySelector('#galleryPopUpBackground').style.display = "none";
-  document.querySelector("#popUpGallery").style.display = 'none';
 }
 
 
@@ -49,7 +32,6 @@ function succedTryAgain(){
 function save(){
     document.querySelector("#popUp_superMain").style.display = "none";
     document.querySelector("#popUPBackground").style.display = "none";
-    document.querySelector("#Gallery").style.display = "block";
     document.querySelector("#recentCitiesAdded").style.display = "block";
     succedTryAgain();
 }

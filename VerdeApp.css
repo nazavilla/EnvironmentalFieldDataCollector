@@ -141,54 +141,6 @@ body {
   }
 }
 
-#popUpNotesS {
-  display: none;
-  background-color: white;
-  top: 10em;
-  left: 35em;
-  height: 20em;
-  width: 50em;
-  border: 1px solid #2e402c;
-  position: relative;
-}
-
-#popUPNotesBackground {
-  display: none;
-  bottom: 30em;
-  margin-left: -21em;
-  background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  width: 103.4em;
-  height: 70em;
-  position: relative;
-  z-index: 1;
-}
-
-#popUpGallery {
-  display: none;
-  background-color: white;
-  top: 10em;
-  left: 18em;
-  height: 20em;
-  width: 50em;
-  border: 1px solid #2e402c;
-  position: relative;
-}
-
-#galleryPopUpBackground {
-  display: none;
-  bottom: 70em;
-  margin-left: -7em;
-  background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  width: 83em;
-  height: 70em;
-  position: relative;
-  z-index: 1;
-}
-
-.notas,
-#Gallery,
 #recentCitiesAdded {
   position: relative;
   top: 0;
@@ -196,28 +148,8 @@ body {
   border-radius: 0.2em;
 }
 
-.notas:hover,
-#Gallery:hover,
 #recentCitiesAdded:hover {
   top: -8px;
-}
-
-.notas {
-  background-color: white;
-  margin: 0px 18px 18px 2px;
-  cursor: pointer;
-  box-shadow: 0.5px 0.5px 3px gray;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-#myNotesTitle {
-  font: 1.4em serif;
-}
-
-.notesImg {
-  width: 2em;
 }
 
 .cityTopSection {
@@ -284,15 +216,6 @@ td {
   height: 300px;
 }
 
-#Gallery {
-  box-shadow: 0.5px 0.5px 3px gray;
-  background-color: white;
-  width: 87px;
-  margin: 0px 0px 18px 2px;
-  height: 10em;
-  cursor: pointer;
-  display: block;
-}
 #mydatatitle {
   font: 1.4em serif;
 }

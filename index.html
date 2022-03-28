@@ -25,18 +25,6 @@
                 <div id="TITLE" class="row p-4 mb-4 text-white text-center">
                     <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
                 </div>
-                <div id="Notes" class="row">
-
-                    <div onclick="notasFunct()" id="mainNotes" class="notas col p-2 text-center">
-                        <div id="myNotesTitle">NOTES</div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" class="notesImg">
-                    </div>
-
-                    <div onclick="gallertFunct()" id="Gallery" class="col p-2 text-center">
-                        <h4 id="mydatatitle" style="text-align: center;">Gallery</h4>
-                    </div>
-
-                </div>
                 <!--EROOR/SUCCESS POP UP -->
 
                 <div onclick="done()" id="successCard" class="row successCard">
@@ -162,57 +150,7 @@
                      4        check media queries correct sizes.
                      5        Open pull request github
                 -->
-                <!--Notes Popup-->
-                <div id="popUPNotesBackground">
-                    <div id="popUpNotesS" class="card p-2 text-dark bg-opacity-25">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="card h-100 note">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Note 1</h5>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100 note">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Note 2</h5>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100 note">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Note 3</h5>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" id="notesDone" onclick="home()"
-                            class="btn-outline-secondary position-absolute bottom-0 mb-4">Back</button>
-                    </div>
-                </div>
-                <!--Gallery Popup-->
-                <div id="galleryPopUpBackground">
-                    <div id="popUpGallery" class="card p-2 text-dark bg-opacity-25">
-                        <div class="showCitiesDiv" >
-                            <img class='picsS' src='gallery/NYC.jpg' alt="New York City" />
-                            <img class='picsS' src='gallery/PuertoAysen.jpg' alt="Puerto Aysen" />
-                            <img class='picsS' src='gallery/SantaCruz.jpg' alt="Santa Cruz" />
-                        </div>
-                        <button type="button" id="notesDone" onclick="home()"
-                            class="btn-outline-secondary position-absolute bottom-0 mb-4">Back</button>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -230,9 +168,3 @@
 </body>
 
 </html>
-
-<!--
-
-
-    Tailwind CSS Mobility First
--->
