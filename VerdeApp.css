@@ -67,7 +67,7 @@ body {
 #popUp_superMain {
   background-color: white;
   display: none;
-  top: 3em;
+  top: 15em;
   height: 31em;
   width: 47em;
   left: 32em;
@@ -83,62 +83,6 @@ body {
   width: 103.4em;
   margin-left: -21em;
   height: 70em;
-}
-
-@media screen and (max-width: 620px) {
-  #popUp_superMain {
-    left: 9em;
-    width: 35em;
-  }
-  #popUPBackground {
-    width: 58em;
-  }
-
-  .successCard {
-    left: 10em;
-  }
-
-  body {
-    margin-left: 2em;
-  }
-
-  .body1 {
-    width: 29em;
-  }
-
-  .flexbodies {
-    display: block;
-  }
-
-  .mapid {
-    height: 37em;
-    margin-left: 5em;
-  }
-
-  .cityFormBttn {
-    padding: 0.5em;
-    letter-spacing: 0em;
-    font-size: 1em;
-  }
-  #tables {
-    margin-left: 0em;
-  }
-  th {
-    padding: 0.6em;
-  }
-  .thead {
-    position: absolute;
-    font-size: 5px;
-    top: 2em;
-    left: -4.5em;
-  }
-
-  #TITLE {
-    font-size: 1.4em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10em;
-  }
 }
 
 #recentCitiesAdded {
@@ -195,14 +139,14 @@ table {
 
 .thead {
   position: absolute;
-  font-size: 16px;
-  top: 6em;
+  font-size: 20px;
+  top: 2em;
   width: 40em;
-  margin: 4em 0em 0em 4em;
+  margin: 4em 0em 4em 0em;
 }
 
 th {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 td {
