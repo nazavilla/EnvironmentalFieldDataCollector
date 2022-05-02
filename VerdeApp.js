@@ -1,10 +1,34 @@
+//User Input DOM
+let cityName = document.getElementById("fname");
+let AQI = document.getElementById("floatingSelectGrid");
+let AQIVal = AQI.options[AQI.selectedIndex].value;
+let pollutants = document.getElementById("inputGroupSelect01");
+let garbage  = document.getElementById("flexCheckChecked");
+let comment = document.getElementById("commentsId");
+let bodyTable = document.querySelector("#main");
+let tbl = document.querySelector("#tables");
+let tblBody = document.createElement("tbody");
+let row1 = document.createElement("tr");
 
+
+//TABLESs
+function city(){
+  let cell1 = document.createElement("td");
+  let cellText1 = document.createTextNode(`${cityName.value}`);
+  //let cell2 = document.createElement('td');
+  //let cellText2 = document.createTextNode(`${AQIVal}`);
+  cell1.appendChild(cellText1);
+  //cell2.appendChild(cellText2);
+  row1.appendChild(cell1);
+  //row1.appendChild(cell2);
+  tblBody.appendChild(row1);
+  tbl.appendChild(tblBody);
+  bodyTable.appendChild(tbl);}
 
 //home button    
 function home(){
   document.querySelector("#recentCitiesAdded").style.display = "block";
 }
-
 
 //CITY FORM 
 function myFunction(){
@@ -34,8 +58,8 @@ function save(){
     document.querySelector("#popUPBackground").style.display = "none";
     document.querySelector("#recentCitiesAdded").style.display = "block";
     succedTryAgain();
+    city()
 }
-
 
 //ERROR-SUCCESS BUTTONS OFF
 
@@ -45,43 +69,6 @@ const done = (success = document.querySelector("#successCard")) =>  success.styl
 //tryAgain button function using default parameters.
 const tryAgaing = (tryagain = document.querySelector("#tryagaing") ) => tryagain.style.display = "none";
 
-
-
-//TABLES
-
-  var bodyTable = document.querySelector("#main");
-  var tbl = document.querySelector("#tables");
-    // create elements <tbody>
-  var tblBody = document.createElement("tbody");
-
-
-  // cells creation
-  for (var j = 0; j <= 10; j++) {
-    // table row creation
-    var row = document.createElement("tr");
-
-    for (var i = 0; i < 6; i++) {
-
-        
-      var cell = document.createElement("td");
-      var cellText = document.createTextNode(""); 
-
-      cell.appendChild(cellText);
-      row.appendChild(cell);
-
-    }
-
-    //row added to end of table body
-    tblBody.appendChild(row);
-  }
-
-  // append the <tbody> inside the <table>
-  tbl.appendChild(tblBody);
-  // put <table> in the <body>
-  bodyTable.appendChild(tbl);
-
-//Added a class to the tblBody
-  tblBody.classList.add("tablebody");
 
 
 //Maps

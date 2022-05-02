@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
-    
 </head>
-
 <body>
     <div class="flexbodies">
         <div class="body1">
@@ -25,21 +23,19 @@
                 <div id="TITLE" class="row p-4 mb-4 text-white text-center">
                     <h4><span id="Subtitle">Environmental Field Data Collection</span></h4>
                 </div>
-                <!--EROOR/SUCCESS POP UP -->
-
+                <!--done-->
                 <div onclick="done()" id="successCard" class="row successCard">
                     <img src='https://cdn-icons-png.flaticon.com/512/190/190411.png'>
                     <h1>Your request was successfully submitted </h1>
                     <button class="bttnsuccess">Done</button>
                 </div>
-                <!--ADD SECTION WHEN USER DOES NOT CLICK ON SAVE BUTTON IT SHOW ERRORCARD-->
+                <!--Try Again-->
                 <div onclick="tryAgaing()" id="tryagaing" class="row errorCard">
                     <img src='https://cdn-icons-png.flaticon.com/512/1810/1810747.png'>
                     <h1>Oops! Something went wrong, try again </h1>
                     <button class="bttnerror">Try again</button>
                 </div>
-
-
+                <!--Cities added-->
                 <div class="row">
                     <div id="recentCitiesAdded" class="col p-2">
                         <div class="cityTopSection">
@@ -65,14 +61,11 @@
                 <!-- FORM POP UP -->
                 <div id="popUPBackground">
                     <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
-                        <!--CITY NAME INPUT-->
+                        <!--city-->
                         <form id="myForm" style="display: flex;" action="/VerdeApp.js" method="post">
-                            <input id="fname" type="text" class="form-control-lg mb-2" placeholder="City Name" required>
-                            <input id="fname" class="form-control-lg mb-2" type="text"
-                                placeholder="Number of inhabitants" required>
+                            <input id="fname" type="text" class="form-control-lg mb-2" placeholder="City Name" autocomplete="off" required>
                         </form>
-
-                        <!--Air Quality Index-->
+                        <!--AQI-->
                         <div class="col-md mb-4">
                             <div class="form-floating">
                                 <select class="form-select" id="floatingSelectGrid"
@@ -86,11 +79,9 @@
                                     <option class="dropdown-item">201-300 (very unhealthy)</option>
                                     <option class="dropdown-item">over 300 (Hazardous)</option>
                                 </select>
-                                <label for="floatingSelectGrid">Works with selects</label>
                             </div>
                         </div>
-
-                        <!--Most Common Pollutants-->
+                        <!--Pollutants-->
                         <div class="input-group mb-3">
                             <label class="input-group-text" for="inputGroupSelect01">pollutants</label>
                             <select class="form-select" id="inputGroupSelect01">
@@ -99,12 +90,9 @@
                                 <option value="2">Tropospheric ozone (O3)</option>
                                 <option value="3">Nitrogen Dioxide (NO2)</option>
                                 <option value="3">sulfur dioxide (SO2)</option>
-
                             </select>
                         </div>
-
-                        <!--Noise Pollution levels -->
-
+                        <!--Noise-->
                         <div class="col-md mb-4">
                             <div class="form-floating">
                                 <select class="form-select" id="floatingSelectGrid"
@@ -116,13 +104,9 @@
                                     <option class="dropdown-item">101-120db (harmful noise) </option>
                                     <option class="dropdown-item">121db (irreversible damage)</option>
                                 </select>
-                                <label for="floatingSelectGrid">Works with selects</label>
                             </div>
                         </div>
-
-                        <!--Presence of garbage
-                    is checked by default
-                    -->
+                        <!--Presence-->
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                             <label class="form-check-label mb-4" for="flexCheckChecked">
@@ -132,28 +116,22 @@
                         <!--Comments-->
                         <div class="input-group">
                             <span class="input-group-text">Comments</span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <textarea class="form-control" id="commentsId" aria-label="With textarea"></textarea>
                         </div>
-
                         <!--Save Butttons-->
-                        <button onclick="save()" type="button" id="save"
+                        <button type="button" id="save"
                             class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="body2">
             <div id="mapid" class="mapid"></div>
         </div>
     </div>
-
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-        
     <script src="VerdeApp.js"></script>
-
 </body>
-
 </html>

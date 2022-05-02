@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nazavilla/SmogTech/issues"
   },
-  "homepage": "https://github.com/nazavilla/SmogTech#readme"
+  "homepage": "https://github.com/nazavilla/SmogTech#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }

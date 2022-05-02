@@ -6,20 +6,16 @@ body {
   color: #2e402c;
   margin-left: 6em;
 }
-
 .flexbodies {
   display: flex;
 }
-
 .body1 {
   width: 55em;
   margin: 0;
 }
-
 .body2 {
   z-index: 0;
 }
-
 .mapid {
   width: 24em;
   height: 37em;
@@ -27,7 +23,6 @@ body {
   margin-left: 4em;
   border: 0.8em solid #2e402c;
 }
-
 #TITLE {
   font-size: 1.6em;
   background-image: url("gallery/header.jpg");
@@ -36,7 +31,6 @@ body {
   height: 10em;
   background-position: bottom;
 }
-
 #TITLE h4 {
   border: 2px solid white;
   width: 18em;
@@ -45,11 +39,9 @@ body {
   font-weight: bolder;
   text-shadow: 2px 2px #2e402c;
 }
-
 #showcase {
   position: relative;
 }
-
 #showcase:after {
   display: none;
   content: "";
@@ -63,7 +55,6 @@ body {
   width: 87em;
   margin-left: -10em;
 }
-
 #popUp_superMain {
   background-color: white;
   display: none;
@@ -73,7 +64,6 @@ body {
   left: 32em;
   border: 1px solid #2e402c;
 }
-
 #popUPBackground {
   display: none;
   bottom: 29em;
@@ -84,59 +74,43 @@ body {
   margin-left: -21em;
   height: 70em;
 }
-
 #recentCitiesAdded {
   position: relative;
   top: 0;
   transition: top ease 0.5s;
   border-radius: 0.2em;
 }
-
 #recentCitiesAdded:hover {
   top: -8px;
 }
-
 .cityTopSection {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5em;
 }
-
 #recentCitiesAdded {
   display: block;
   box-shadow: 0.5px 0.5px 3px gray;
   background-color: white;
   width: 87px;
   margin: 0px 0px 18px 2px;
-  height: 35em;
+  height: 28em;
   display: block;
   cursor: pointer;
 }
-
 #listtitle {
   font: 1.9em serif;
   padding: 1em 0em 0em 0em;
   border-bottom: 1px solid;
   margin-bottom: 2em;
 }
-
-#main {
-  display: block;
-}
-
 table {
   overflow-y: scroll;
   position: static;
   width: 43em;
-
-  margin-left: 7em;
+  margin-left: 6em;
 }
-
-.tablebody {
-  position: relative;
-}
-
 .thead {
   position: absolute;
   font-size: 20px;
@@ -144,62 +118,27 @@ table {
   width: 40em;
   margin: 4em 0em 4em 0em;
 }
-
 th {
   padding: 1.5em;
 }
-
 td {
   border-bottom: 1px solid rgb(164, 164, 185);
   height: 3em;
 }
-
 #main {
+  display: block;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 300px;
+  height: 201px;
 }
-
 #mydatatitle {
   font: 1.4em serif;
 }
-
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#display_image {
-  width: 300px;
-  height: 139px;
-  border: 1px solid black;
-  background-position: center;
-  background-size: cover;
-}
-
-.imgFlex {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .form-control-lg {
   margin: 0 auto;
   width: 15em;
   text-align: center;
 }
-
-#currentdate {
-  font-weight: bolder;
-  color: white;
-}
-
-/* ERROR SUCESS POP UP*/
-
 .successCard {
   display: none;
   position: absolute;
@@ -214,10 +153,9 @@ td {
   padding: 3em;
   height: 20em;
   box-shadow: 2px 2px 10px grey;
+  display: none;
 }
-
 .errorCard {
-  /*ADD SECTION WHEN USER DOES NOT CLICK ON SAVE BUTTON IT SHOW ERRORCARD*/
   display: none;
   position: absolute;
   z-index: 1;
@@ -231,18 +169,16 @@ td {
   padding: 3em;
   height: 20em;
   box-shadow: 2px 2px 10px grey;
+  display: none;
 }
-
 .errorCard img,
 .successCard img {
   width: 5em;
 }
-
 h1 {
   font-size: 1.5em;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
-
 .bttnsuccess {
   background-color: #2e402c;
   color: white;
@@ -267,7 +203,6 @@ h1 {
   font-size: 1.5em;
   letter-spacing: 3px;
 }
-
 .cityFormBttn {
   border: 1px solid #2e402c;
   background-color: white;
@@ -277,38 +212,7 @@ h1 {
   letter-spacing: 0.2em;
   font-size: 1.1em;
 }
-
 .cityFormBttn:hover {
   background-color: #2e402c;
   color: #ffffff;
-}
-
-.openSource {
-  text-decoration: underline;
-  color: #2e402c;
-}
-
-.note {
-  cursor: pointer;
-}
-
-.note:hover {
-  top: 18px;
-}
-
-#tryagaing,
-#successCard {
-  display: none;
-}
-
-/*gallery*/
-
-.showCitiesDiv {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.picsS {
-  width: 10em;
-  margin-top: 4em;
 }
