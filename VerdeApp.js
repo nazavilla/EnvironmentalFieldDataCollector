@@ -1,7 +1,7 @@
 //User Input DOM
 let cityName = document.getElementById("fname");
 let AQI = document.getElementById("floatingSelectGrid");
-let AQIVal = AQI.options[AQI.selectedIndex].value;
+let Noise = document.getElementById("floatingSelectGrid2");
 let pollutants = document.getElementById("inputGroupSelect01");
 let garbage  = document.getElementById("flexCheckChecked");
 let comment = document.getElementById("commentsId");
@@ -15,12 +15,20 @@ let row1 = document.createElement("tr");
 function city(){
   let cell1 = document.createElement("td");
   let cellText1 = document.createTextNode(`${cityName.value}`);
-  //let cell2 = document.createElement('td');
-  //let cellText2 = document.createTextNode(`${AQIVal}`);
+  let cell2 = document.createElement('td');
+  let cellText2 = document.createTextNode(`${AQI.options[AQI.selectedIndex].value}`);
+  let cell3 = document.createElement('td');
+  let cellText3 = document.createTextNode(`${Noise.options[Noise.selectedIndex].value}`);
+  let cell4 = document.createElement('td');
+  let cellText4 = document.createTextNode(`${pollutants.options[pollutants.selectedIndex].value}`)
   cell1.appendChild(cellText1);
-  //cell2.appendChild(cellText2);
+  cell2.appendChild(cellText2);
+  cell3.appendChild(cellText3);
+  cell4.appendChild(cellText4);
   row1.appendChild(cell1);
-  //row1.appendChild(cell2);
+  row1.appendChild(cell2);
+  row1.appendChild(cell3);
+  row1.appendChild(cell4);
   tblBody.appendChild(row1);
   tbl.appendChild(tblBody);
   bodyTable.appendChild(tbl);}

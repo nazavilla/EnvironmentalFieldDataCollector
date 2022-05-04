@@ -1,16 +1,16 @@
 body {
-  background-color: #f5f9ff;
-  font-family: "Playfair Display";
-  line-height: 1.25;
-  transition: font-size 0.25s ease;
-  color: #2e402c;
-  margin-left: 6em;
+background-color: #f5f9ff;
+    font-family: "Playfair Display";
+    line-height: 1.25;
+    color: #2e402c;
+    margin: 0 auto;
+    width: 76em;
 }
 .flexbodies {
   display: flex;
 }
 .body1 {
-  width: 55em;
+  width: 60em;
   margin: 0;
 }
 .body2 {
@@ -139,37 +139,17 @@ td {
   width: 15em;
   text-align: center;
 }
-.successCard {
+
+.errorCard, .successCard {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 8em;
-  right: 32em;
+  right: 60em;
   text-align: center;
   background-color: white;
-  margin: 1em auto;
   width: 18em;
-  border-radius: 2em;
   padding: 3em;
-  height: 20em;
-  box-shadow: 2px 2px 10px grey;
-  display: none;
-}
-.errorCard {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  top: 13em;
-  right: 33em;
-  text-align: center;
-  background-color: white;
-  margin: 1em auto;
-  width: 18em;
-  border-radius: 2em;
-  padding: 3em;
-  height: 20em;
-  box-shadow: 2px 2px 10px grey;
-  display: none;
+  box-shadow: 2px 2px 10px #8080805c;
 }
 .errorCard img,
 .successCard img {

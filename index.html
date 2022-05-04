@@ -71,13 +71,12 @@
                                 <select class="form-select" id="floatingSelectGrid"
                                     aria-label="Floating label select example">
                                     <option selected>Air Quality Index</option>
-                                    <option class="dropdown-item">0-50 (Good)</option>
-                                    <option class="dropdown-item">51-100 (moderate)</option>
-                                    <option class="dropdown-item">101-150 (harmful for vulnerable groups)</option>
-                                    <option class="dropdown-item">151-200 (harmful for the rest of the population)
-                                    </option>
-                                    <option class="dropdown-item">201-300 (very unhealthy)</option>
-                                    <option class="dropdown-item">over 300 (Hazardous)</option>
+                                    <option value="Good" class="dropdown-item" >0-50 (Good)</option>
+                                    <option value="Moderate" class="dropdown-item">51-100 (moderate)</option>
+                                    <option value="Harmful-low" class="dropdown-item" >101-150 (harmful for vulnerable groups)</option>
+                                    <option value="Harmful-high" class="dropdown-item">151-200 (harmful for the rest of the population)</option>
+                                    <option value="unhealthy" class="dropdown-item">201-300 (very unhealthy)</option>
+                                    <option value="hazardous" class="dropdown-item">over 300 (Hazardous)</option>
                                 </select>
                             </div>
                         </div>
@@ -86,23 +85,23 @@
                             <label class="input-group-text" for="inputGroupSelect01">pollutants</label>
                             <select class="form-select" id="inputGroupSelect01">
                                 <option selected>Select</option>
-                                <option value="1">Particular matter</option>
-                                <option value="2">Tropospheric ozone (O3)</option>
-                                <option value="3">Nitrogen Dioxide (NO2)</option>
-                                <option value="3">sulfur dioxide (SO2)</option>
+                                <option value="P-M">Particular matter</option>
+                                <option value="03">Tropospheric ozone (O3)</option>
+                                <option value="NO2">Nitrogen Dioxide (NO2)</option>
+                                <option value="SO2">sulfur dioxide (SO2)</option>
                             </select>
                         </div>
                         <!--Noise-->
                         <div class="col-md mb-4">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelectGrid"
+                                <select class="form-select" id="floatingSelectGrid2"
                                     aria-label="Floating label select example">
                                     <option selected>Noise Pollution levels</option>
-                                    <option class="dropdown-item">0-50db (low)</option>
-                                    <option class="dropdown-item">51-75db (considerate noise)</option>
-                                    <option class="dropdown-item">75-100db (high noise)</option>
-                                    <option class="dropdown-item">101-120db (harmful noise) </option>
-                                    <option class="dropdown-item">121db (irreversible damage)</option>
+                                    <option value="low" class="dropdown-item">0-50db (low)</option>
+                                    <option value="considerate" class="dropdown-item">51-75db (considerate noise)</option>
+                                    <option value="high" class="dropdown-item">75-100db (high noise)</option>
+                                    <option value="harmful" class="dropdown-item">101-120db (harmful noise) </option>
+                                    <option value="irreversible" class="dropdown-item">121db (irreversible damage)</option>
                                 </select>
                             </div>
                         </div>
@@ -119,8 +118,7 @@
                             <textarea class="form-control" id="commentsId" aria-label="With textarea"></textarea>
                         </div>
                         <!--Save Butttons-->
-                        <button type="button" id="save"
-                            class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
+                        <button type="button" id="save"onclick="save()" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
                     </div>
                 </div>
             </div>
