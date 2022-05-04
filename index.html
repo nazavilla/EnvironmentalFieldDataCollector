@@ -40,7 +40,7 @@
                     <div id="recentCitiesAdded" class="col p-2">
                         <div class="cityTopSection">
                             <h1 id="listtitle">Cities Added List</h1>
-                            <div><button onclick="myFunction()" id="Form" class="cityFormBttn"> City Form</button></div>
+                            <div><button onclick="myFunction()" id="Form" class="cityFormBttn">City Form</button></div>
                         </div>
                         <div id="main">
                             <table id="tables">
@@ -54,6 +54,8 @@
                                         <th>Comment</th>
                                     </tr>
                                 </thead>
+                                <tbody class="tbody">
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -97,17 +99,17 @@
                                 <select class="form-select" id="floatingSelectGrid2"
                                     aria-label="Floating label select example">
                                     <option selected>Noise Pollution levels</option>
-                                    <option value="low" class="dropdown-item">0-50db (low)</option>
-                                    <option value="considerate" class="dropdown-item">51-75db (considerate noise)</option>
-                                    <option value="high" class="dropdown-item">75-100db (high noise)</option>
-                                    <option value="harmful" class="dropdown-item">101-120db (harmful noise) </option>
-                                    <option value="irreversible" class="dropdown-item">121db (irreversible damage)</option>
+                                    <option value="Low" class="dropdown-item">0-50db (low)</option>
+                                    <option value="Considerate" class="dropdown-item">51-75db (considerate noise)</option>
+                                    <option value="High" class="dropdown-item">75-100db (high noise)</option>
+                                    <option value="Harmful" class="dropdown-item">101-120db (harmful noise) </option>
+                                    <option value="Irreversible" class="dropdown-item">121db (irreversible damage)</option>
                                 </select>
                             </div>
                         </div>
                         <!--Presence-->
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <input class="form-check-input" type="checkbox" value="Checked" id="flexCheckChecked">
                             <label class="form-check-label mb-4" for="flexCheckChecked">
                                 Presence of garbage
                             </label>

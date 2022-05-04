@@ -10,7 +10,6 @@ let tbl = document.querySelector("#tables");
 let tblBody = document.createElement("tbody");
 let row1 = document.createElement("tr");
 
-
 //TABLESs
 function city(){
   let cell1 = document.createElement("td");
@@ -21,17 +20,31 @@ function city(){
   let cellText3 = document.createTextNode(`${Noise.options[Noise.selectedIndex].value}`);
   let cell4 = document.createElement('td');
   let cellText4 = document.createTextNode(`${pollutants.options[pollutants.selectedIndex].value}`)
+  let cell5 = document.createElement('td');
+  let input = document.createElement('input');
+  input.type = "chekbox";
+  input.className = "form-check-input";
+  input.value = "checked";
+  let cell6 = document.createElement('td');
+  let cellText6 = document.createTextNode(`${comment.value}`)
   cell1.appendChild(cellText1);
   cell2.appendChild(cellText2);
   cell3.appendChild(cellText3);
   cell4.appendChild(cellText4);
+  cell5.appendChild(input);
+  cell6.appendChild(cellText6);
   row1.appendChild(cell1);
   row1.appendChild(cell2);
   row1.appendChild(cell3);
   row1.appendChild(cell4);
+  row1.appendChild(cell5);
+  row1.appendChild(cell6)
   tblBody.appendChild(row1);
   tbl.appendChild(tblBody);
-  bodyTable.appendChild(tbl);}
+  bodyTable.appendChild(tbl);
+}
+
+console.log(garbage.value);
 
 //home button    
 function home(){
