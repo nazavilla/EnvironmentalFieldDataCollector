@@ -10,45 +10,62 @@ let tbl = document.querySelector("#tables");
 let tblBody = document.createElement("tbody");
 let row1 = document.createElement("tr");
 
-//TABLESs
+
+
+//TABLES
+//just one
+//reduce code
+  var allowSubmit = true;
 function city(){
-  let cell1 = document.createElement("td");
-  let cellText1 = document.createTextNode(`${cityName.value}`);
-  let cell2 = document.createElement('td');
-  let cellText2 = document.createTextNode(`${AQI.options[AQI.selectedIndex].value}`);
-  let cell3 = document.createElement('td');
-  let cellText3 = document.createTextNode(`${Noise.options[Noise.selectedIndex].value}`);
-  let cell4 = document.createElement('td');
-  let cellText4 = document.createTextNode(`${pollutants.options[pollutants.selectedIndex].value}`)
-  let cell5 = document.createElement('td');
-  let input = document.createElement('input');
-  input.type = "chekbox";
-  input.className = "form-check-input";
-  input.value = "checked";
-  let cell6 = document.createElement('td');
-  let cellText6 = document.createTextNode(`${comment.value}`)
-  cell1.appendChild(cellText1);
-  cell2.appendChild(cellText2);
-  cell3.appendChild(cellText3);
-  cell4.appendChild(cellText4);
-  cell5.appendChild(input);
-  cell6.appendChild(cellText6);
-  row1.appendChild(cell1);
-  row1.appendChild(cell2);
-  row1.appendChild(cell3);
-  row1.appendChild(cell4);
-  row1.appendChild(cell5);
-  row1.appendChild(cell6)
-  tblBody.appendChild(row1);
-  tbl.appendChild(tblBody);
-  bodyTable.appendChild(tbl);
+  if (allowSubmit) {
+      let cell1 = document.createElement("td");
+      let cellText1 = document.createTextNode(`${cityName.value}`);
+      let cell2 = document.createElement('td');
+      let cellText2 = document.createTextNode(`${AQI.options[AQI.selectedIndex].value}`);
+      let cell3 = document.createElement('td');
+      let cellText3 = document.createTextNode(`${Noise.options[Noise.selectedIndex].value}`);
+      let cell4 = document.createElement('td');
+      let cellText4 = document.createTextNode(`${pollutants.options[pollutants.selectedIndex].value}`)
+      let cell5 = document.createElement('td');
+      let input = document.createElement('input');
+      input.type = "chekbox";
+      input.className = "form-check-input";
+      input.value = "checked";
+      let cell6 = document.createElement('td');
+      let cellText6 = document.createTextNode(`${comment.value}`)
+      cell1.appendChild(cellText1);
+      cell2.appendChild(cellText2);
+      cell3.appendChild(cellText3);
+      cell4.appendChild(cellText4);
+      cell5.appendChild(input);
+      cell6.appendChild(cellText6);
+      row1.appendChild(cell1);
+      row1.appendChild(cell2);
+      row1.appendChild(cell3);
+      row1.appendChild(cell4);
+      row1.appendChild(cell5);
+      row1.appendChild(cell6)
+      tblBody.appendChild(row1);
+      tbl.appendChild(tblBody);
+      bodyTable.appendChild(tbl); 
+}
+   allowSubmit = false;
+  
 }
 
-console.log(garbage.value);
 
 //home button    
 function home(){
   document.querySelector("#recentCitiesAdded").style.display = "block";
+}
+
+//Save Button NOT CONNECTED TO A DATABASE YET
+function save(){
+    document.querySelector("#popUp_superMain").style.display = "none";
+    document.querySelector("#popUPBackground").style.display = "none";
+    document.querySelector("#recentCitiesAdded").style.display = "block";
+    succedTryAgain();
+    city();
 }
 
 //CITY FORM 
@@ -71,15 +88,6 @@ function succedTryAgain(){
     else{
       exito.style.display = "block";
     }
-}
-
-//Save Button NOT CONNECTED TO A DATABASE YET
-function save(){
-    document.querySelector("#popUp_superMain").style.display = "none";
-    document.querySelector("#popUPBackground").style.display = "none";
-    document.querySelector("#recentCitiesAdded").style.display = "block";
-    succedTryAgain();
-    city()
 }
 
 //ERROR-SUCCESS BUTTONS OFF
