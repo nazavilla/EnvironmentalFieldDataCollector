@@ -87,7 +87,6 @@ background-color: #f5f9ff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 5em;
 }
 #recentCitiesAdded {
   display: block;
@@ -108,13 +107,11 @@ background-color: #f5f9ff;
 table {
   overflow-y: scroll;
   position: static;
-  width: 43em;
+  width: 48em;
   margin-left: 6em;
 }
 .thead {
-  position: absolute;
   font-size: 20px;
-  top: 2em;
   width: 40em;
   margin: 4em 0em 4em 0em;
 }
@@ -127,6 +124,11 @@ td {
   font-size: 20px;
   text-align: center;
 }
+
+.headTr{
+  width: 10em;
+}
+
 #main {
   display: block;
   overflow-y: scroll;

@@ -3,7 +3,6 @@ let cityName = document.getElementById("fname");
 let AQI = document.getElementById("floatingSelectGrid");
 let Noise = document.getElementById("floatingSelectGrid2");
 let pollutants = document.getElementById("inputGroupSelect01");
-let garbage  = document.getElementById("flexCheckChecked");
 let comment = document.getElementById("commentsId");
 let bodyTable = document.querySelector("#main");
 let tbl = document.querySelector("#tables");
@@ -26,24 +25,17 @@ function city(){
       let cellText3 = document.createTextNode(`${Noise.options[Noise.selectedIndex].value}`);
       let cell4 = document.createElement('td');
       let cellText4 = document.createTextNode(`${pollutants.options[pollutants.selectedIndex].value}`)
-      let cell5 = document.createElement('td');
-      let input = document.createElement('input');
-      input.type = "chekbox";
-      input.className = "form-check-input";
-      input.value = "checked";
       let cell6 = document.createElement('td');
       let cellText6 = document.createTextNode(`${comment.value}`)
       cell1.appendChild(cellText1);
       cell2.appendChild(cellText2);
       cell3.appendChild(cellText3);
       cell4.appendChild(cellText4);
-      cell5.appendChild(input);
       cell6.appendChild(cellText6);
       row1.appendChild(cell1);
       row1.appendChild(cell2);
       row1.appendChild(cell3);
       row1.appendChild(cell4);
-      row1.appendChild(cell5);
       row1.appendChild(cell6)
       tblBody.appendChild(row1);
       tbl.appendChild(tblBody);
@@ -66,6 +58,14 @@ function save(){
     document.querySelector("#recentCitiesAdded").style.display = "block";
     succedTryAgain();
     city();
+    document.getElementById("myForm").reset(); //clear city
+    AQI.selectedIndex = 0; //clear AQI
+    Noise.selectedIndex =0; //clear Noise
+    pollutants.selectedIndex =0; //clear pollutants
+    comment.value = "  "
+    
+
+
 }
 
 //CITY FORM 

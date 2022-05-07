@@ -45,12 +45,11 @@
                         <div id="main">
                             <table id="tables">
                                 <thead id="thead" class="thead">
-                                    <tr>
+                                    <tr class="headTr">
                                         <th>City</th>
                                         <th>AQI</th>
                                         <th>Noise</th>
                                         <th>Pollutant</th>
-                                        <th>Garbage</th>
                                         <th>Comment</th>
                                     </tr>
                                 </thead>
@@ -61,7 +60,7 @@
                     </div>
                 </div>
                 <!-- FORM POP UP -->
-                <div id="popUPBackground">
+                <div id="popUPBackground" class="clear">
                     <div id="popUp_superMain" class="card p-2 text-dark bg-opacity-25 popUp_superMain">
                         <!--city-->
                         <form id="myForm" style="display: flex;" action="/VerdeApp.js" method="post">
@@ -107,20 +106,13 @@
                                 </select>
                             </div>
                         </div>
-                        <!--Presence-->
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Checked" id="flexCheckChecked">
-                            <label class="form-check-label mb-4" for="flexCheckChecked">
-                                Presence of garbage
-                            </label>
-                        </div>
                         <!--Comments-->
                         <div class="input-group">
                             <span class="input-group-text">Comments</span>
                             <textarea class="form-control" id="commentsId" aria-label="With textarea"></textarea>
                         </div>
                         <!--Save Butttons-->
-                        <button type="button" id="save"onclick="save()" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
+                        <button type="button" id="save" onclick="save()" class="btn btn-outline-secondary btn-lg position-absolute bottom-0  start-50 translate-middle-x mb-4">Save</button>
                     </div>
                 </div>
             </div>
