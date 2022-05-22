@@ -1,0 +1,28 @@
+{
+  "name": "environmetal",
+  "version": "1.0.0",
+  "description": "A data Collection created to store environmental characteristics of specifics zones.",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazavilla/Environmental-Field-Data-Collection.git"
+  },
+  "keywords": [],
+  "author": "Nazareth Villa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazavilla/Environmental-Field-Data-Collection/issues"
+  },
+  "homepage": "https://github.com/nazavilla/Environmental-Field-Data-Collection#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+  }
+}

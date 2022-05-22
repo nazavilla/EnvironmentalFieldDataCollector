@@ -6,6 +6,9 @@ A data Collection created to store environmental characteristics of specifics zo
 
 - Bootstrap
 - leaflet and openstreetmap API
+- Node.JS
+- Express JS
+- MySQL
 
 ## City Form template information to be registered
 
