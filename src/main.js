@@ -50,26 +50,31 @@ function city() {
         .createElement("td")
         .appendChild(document.createTextNode(comment.value))
     );
+    //append tr to tbody
     tblBody.appendChild(row1);
+    //append tbody to the table
     tbl.appendChild(tblBody);
+    //append the table to the div that contains the table
     bodyTable.appendChild(tbl);
   }
   allowSubmit = false;
 }
 
 //Save Button NOT CONNECTED TO A DATABASE YET
-document.getElementById("save").addEventListener("click", function save() {
-  document.querySelector("#popUp_superMain").style.display = "none";
-  document.querySelector("#popUPBackground").style.display = "none";
-  document.querySelector("#recentCitiesAdded").style.display = "block";
-  succedTryAgain();
-  city();
-  document.getElementById("myForm").reset(); //clear city
-  AQI.selectedIndex = 0; //clear AQI
-  Noise.selectedIndex = 0; //clear Noise
-  pollutants.selectedIndex = 0; //clear pollutants
-  comment.value = "  ";
-});
+document
+  .getElementById("save")
+  .addEventListener("click", function myFuncsave() {
+    document.querySelector("#popUp_superMain").style.display = "none";
+    document.querySelector("#popUPBackground").style.display = "none";
+    document.querySelector("#recentCitiesAdded").style.display = "block";
+    succedTryAgain();
+    city();
+    document.getElementById("myForm").reset(); //clear city
+    AQI.selectedIndex = 0; //clear AQI
+    Noise.selectedIndex = 0; //clear Nois
+    pollutants.selectedIndex = 0; //clear pollutants
+    comment.value = "  ";
+  });
 
 //CITY FORM
 document
@@ -83,26 +88,12 @@ document
 //function that will show error or donie message after Save button
 function succedTryAgain() {
   var x = document.forms["myForm"]["fname"].value;
-  var exito = document.querySelector("#successCard");
   var errorCard = document.querySelector("#tryagaing");
   //if pop up values are empty show error popup
   if (x == "") {
     errorCard.style.display = "block";
   }
-  //debug success Message popup when values are entered
-  else {
-    exito.style.display = "block";
-  }
 }
-
-//ERROR-SUCCESS BUTTONS OFF
-
-//Success message donie button function using default parameters.
-document
-  .getElementById("successCard")
-  .addEventListener("click", function done() {
-    document.querySelector("#successCard").style.display = "none";
-  });
 
 //tryAgain button function using default parameters.
 document
@@ -125,26 +116,3 @@ document
     }
     document.getElementById("status").innerHTML = output;
   });
-
-function maps(location) {
-  var map = null;
-
-  if (map !== undefined && map !== null) {
-    map.remove();
-  }
-
-  map = L.map("mapid", {
-    center: [location[1], location[2]],
-    minZoom: 2,
-    zoom: 13,
-  });
-
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
-
-  L.marker([location[1], location[2]]).addTo(map).bindPopup(location[0]);
-}
-
-maps(["New York", 40.6971494, -74.2598757]);
