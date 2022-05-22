@@ -1,0 +1,205 @@
+body {
+background-color: #f5f9ff;
+    font-family: "Playfair Display";
+    line-height: 1.25;
+    color: #2e402c;
+    margin: 0 auto;
+    width: 76em;
+}
+.flexbodies {
+  display: flex;
+}
+.body1 {
+  width: 60em;
+  margin: 0;
+}
+.body2 {
+  z-index: 0;
+}
+.mapid {
+  width: 24em;
+  height: 37em;
+  margin-top: 1em;
+  margin-left: 4em;
+  border: 0.8em solid #2e402c;
+}
+#TITLE {
+  font-size: 1.6em;
+  background-image: url("gallery/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10em;
+  background-position: bottom;
+}
+#TITLE h4 {
+  border: 2px solid white;
+  width: 18em;
+  margin: 1em auto;
+  font-size: 2em;
+  font-weight: bolder;
+  text-shadow: 2px 2px #2e402c;
+}
+#showcase {
+  position: relative;
+}
+#showcase:after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 87em;
+  margin-left: -10em;
+}
+#popUp_superMain {
+  background-color: white;
+  display: none;
+  top: 15em;
+  height: 31em;
+  width: 47em;
+  left: 32em;
+  border: 1px solid #2e402c;
+}
+#popUPBackground {
+  display: none;
+  bottom: 29em;
+  backdrop-filter: blur(12px);
+  z-index: 1;
+  position: relative;
+  width: 103.4em;
+  margin-left: -21em;
+  height: 70em;
+}
+#recentCitiesAdded {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border-radius: 0.2em;
+}
+#recentCitiesAdded:hover {
+  top: -8px;
+}
+.cityTopSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#recentCitiesAdded {
+  display: block;
+  box-shadow: 0.5px 0.5px 3px gray;
+  background-color: white;
+  width: 87px;
+  margin: 0px 0px 18px 2px;
+  height: 28em;
+  display: block;
+  cursor: pointer;
+}
+#listtitle {
+  font: 1.9em serif;
+  padding: 1em 0em 0em 0em;
+  border-bottom: 1px solid;
+  margin-bottom: 2em;
+}
+table {
+  overflow-y: scroll;
+  position: static;
+  width: 48em;
+  margin-left: 6em;
+}
+.thead {
+  font-size: 20px;
+  width: 40em;
+  margin: 4em 0em 4em 0em;
+}
+th {
+  padding: 1.5em;
+}
+td {
+  border-bottom: 1px solid rgb(164, 164, 185);
+  height: 3em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.headTr{
+  width: 10em;
+}
+
+#main {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 201px;
+}
+#mydatatitle {
+  font: 1.4em serif;
+}
+.form-control-lg {
+  margin: 0 auto;
+  width: 15em;
+  text-align: center;
+}
+
+.errorCard, .successCard {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 60em;
+  text-align: center;
+  background-color: white;
+  width: 18em;
+  padding: 3em;
+  box-shadow: 2px 2px 10px #8080805c;
+}
+.errorCard img,
+.successCard img {
+  width: 5em;
+}
+h1 {
+  font-size: 1.5em;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+.bttnsuccess {
+  background-color: #2e402c;
+  color: white;
+  border: 1px solid white;
+  padding: 0.9em;
+  border-radius: 2em;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+.bttnsuccess:hover {
+  background-color: white;
+  color: #2e402c;
+  border: 1px solid #2e402c;
+}
+.bttnerror {
+  background-color: #cd4c4c;
+  color: white;
+  border: 1px solid black;
+  padding: 0.9em;
+  border-radius: 2em;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+.cityFormBttn {
+  border: 1px solid #2e402c;
+  background-color: white;
+  color: #2e402c;
+  border-radius: 2em;
+  padding: 1em;
+  letter-spacing: 0.2em;
+  font-size: 1.1em;
+}
+.cityFormBttn:hover {
+  background-color: #2e402c;
+  color: #ffffff;
+}
+#status{
+  padding: 2em;
+}
