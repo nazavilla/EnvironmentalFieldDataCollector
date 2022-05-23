@@ -6,3 +6,4 @@ export async function fetchCityData() {
   return await response.json();
 }
 
+
