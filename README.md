@@ -5,7 +5,6 @@ A data Collection created to store environmental characteristics of specifics zo
 ### Built with
 
 - Bootstrap
-- leaflet and openstreetmap API
 - Node.JS
 - Express JS
 - MySQL
